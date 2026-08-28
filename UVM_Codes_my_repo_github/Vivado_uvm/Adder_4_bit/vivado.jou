@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 30 07:05:39 2022
+# Process ID: 18132
+# Current directory: E:/Programming/Vivado/uvm/Adder_4_bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16924 E:\Programming\Vivado\uvm\Adder_4_bit\adder_proj.xpr
+# Log file: E:/Programming/Vivado/uvm/Adder_4_bit/vivado.log
+# Journal file: E:/Programming/Vivado/uvm/Adder_4_bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Programming/Vivado/uvm/Adder_4_bit/adder_proj.xpr
+update_compile_order -fileset sources_1
+pwd
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.runtime} -value {-all} -objects [get_filesets sim_1]
+set_property -name {xsim.compile.xvlog.more_options} -value {-L uvm -define "NO_OF_TRANSACTIONS=2000"} -objects [get_filesets sim_1]
+set_property -name {xsim.elaborate.xelab.more_options} -value {-L uvm -timescale 1ns/1ps} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.xsim.more_options} -value {-testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW} -objects [get_filesets sim_1]
+launch_simulation
+pwd
+cd run
+pwd
+xvlog -sv -f adder_4_bit_compile_list.f -L uvm -define NO_OF_TRANSACTIONS=2000 ;
+exec xvlog -sv -f adder_4_bit_compile_list.f -L uvm -define NO_OF_TRANSACTIONS=2000 ;
+exec xelab adder_4_bit_tb_top -relax -s top -timescale 1ns/1ps ;
+launch_simulation
+pwd
+launch_simulation
+exec xelab adder_4_bit_tb_top -relax -s top -timescale 1ns/1ps ;
+exec xvlog -sv -f adder_4_bit_compile_list.f -L uvm -define NO_OF_TRANSACTIONS=10 ;
+exec xelab adder_4_bit_tb_top -relax -s top -timescale 1ns/1ps ;
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW -runall
+set_property -name {xsim.simulate.wdb} -value {abc.wdb} -objects [get_filesets sim_1]
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW -runall
+set_property -name {xsim.simulate.wdb} -value {abc} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.saif_all_signals} -value {true} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.add_positional} -value {true} -objects [get_filesets sim_1]
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW -runall --wdb abc.wdb
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW -runall
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW -runall --gui
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW --gui
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW --gui -debug all
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW --gui --view
+exec xsim top -testplusarg UVM_TESTNAME=adder_4_bit_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW --gui

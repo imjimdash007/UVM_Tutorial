@@ -1,0 +1,10 @@
+--> Noite this is ran with Questa 10.6c
+
+vlog -work work -novopt -sv simple_add2agent.sv sum.c +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+
+vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi
+
+run -a
+
+
+https://sistenix.com/basic_uvm.html

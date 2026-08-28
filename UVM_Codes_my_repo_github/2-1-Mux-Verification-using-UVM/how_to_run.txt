@@ -1,0 +1,3 @@
+vlog -work work -vopt -sv .\top.sv +incdir+D:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+D:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib D:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi +UVM_TESTNAME=mux_testa
+run -a

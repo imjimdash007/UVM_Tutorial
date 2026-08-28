@@ -1,0 +1,2 @@
+vsim -L work -sva -t 1ps -suppress 8637 +UVM_TESTNAME=data0_test top
+log -r /*

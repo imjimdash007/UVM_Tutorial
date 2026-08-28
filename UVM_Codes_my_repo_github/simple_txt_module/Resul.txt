@@ -1,0 +1,95 @@
+# Reading C:/questasim_10.6c/tcl/vsim/pref.tcl
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Project file E:/Program_Practise/UVM/UVM_Codes/TB_parallel_exp2/af.mpf was not found.
+# Unable to open project.
+# Loading project cz
+# Compile of simple_example.sv was successful.
+vsim -novopt work.sv_task
+# vsim -novopt work.sv_task 
+# Start time: 15:56:49 on Feb 04,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/work.sv_task
+# Loading sv_std.std
+# Loading work.sv_task
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/work.simple_design
+# Loading work.simple_design
+# ** Warning: (vsim-3017) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(12): [TFMPC] - Too few port connections. Expected 2, found 0.
+#    Time: 0 ns  Iteration: 0  Instance: /sv_task/DUT File: E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv
+# ** Warning: (vsim-3722) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(12): [TFMPC] - Missing connection for port 'a'.
+# ** Warning: (vsim-3722) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(12): [TFMPC] - Missing connection for port 'b'.
+add wave -position insertpoint  \
+sim:/sv_task/DUT/a \
+sim:/sv_task/DUT/b
+run
+#        1234
+#        5678
+#        3456
+#        1234
+quit -sim
+# End time: 15:59:48 on Feb 04,2021, Elapsed time: 0:02:59
+# Errors: 0, Warnings: 4
+# Compile of simple_example.sv was successful.
+vsim -novopt work.sv_task
+# vsim -novopt work.sv_task 
+# Start time: 15:59:58 on Feb 04,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/work.sv_task
+# Loading sv_std.std
+# Loading work.sv_task
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/work.simple_design
+# Loading work.simple_design
+# ** Warning: (vsim-3017) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(13): [TFMPC] - Too few port connections. Expected 2, found 0.
+#    Time: 0 ns  Iteration: 0  Instance: /sv_task/DUT File: E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv
+# ** Warning: (vsim-3722) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(13): [TFMPC] - Missing connection for port 'a'.
+# ** Warning: (vsim-3722) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(13): [TFMPC] - Missing connection for port 'b'.
+add wave -position insertpoint  \
+sim:/sv_task/DUT/a \
+sim:/sv_task/DUT/b
+run 
+#        1234
+#        5678
+# Test , passed !!
+quit -sim
+# End time: 16:05:07 on Feb 04,2021, Elapsed time: 0:05:09
+# Errors: 0, Warnings: 4
+# Compile of simple_example.sv was successful.
+vsim -novopt work.sv_task
+# vsim -novopt work.sv_task 
+# Start time: 16:05:22 on Feb 04,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/work.sv_task
+# Loading sv_std.std
+# Loading work.sv_task
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/work.simple_design
+# Loading work.simple_design
+# ** Warning: (vsim-3017) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(14): [TFMPC] - Too few port connections. Expected 2, found 0.
+#    Time: 0 ns  Iteration: 0  Instance: /sv_task/DUT File: E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv
+# ** Warning: (vsim-3722) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(14): [TFMPC] - Missing connection for port 'a'.
+# ** Warning: (vsim-3722) E:/Program_Practise/UVM/UVM_Codes/simple_txt_module/simple_example.sv(14): [TFMPC] - Missing connection for port 'b'.
+add wave -position insertpoint  \
+sim:/sv_task/DUT/a \
+sim:/sv_task/DUT/b
+run
+#        1234
+#        5678
+# Test , passed !!
+#        3456
+#        1234
+# Test , passed !!
+run
+quit -f
+# End time: 16:06:05 on Feb 04,2021, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 4

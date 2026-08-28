@@ -1,0 +1,140 @@
+# vsim -c -do "run -all" work.top_tb "+UVM_TESTNAME=complete_transfer_test" -qwavedb=+signal+transaction+class+memory=4096,4+uvm_schematic 
+# Start time: 19:07:57 on Jan 19,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.bus_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.bus_agent_pkg(fast)
+# Loading work.bus_seq_lib_pkg(fast)
+# Loading work.test_lib_pkg(fast)
+# Loading work.top_tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim_10.6c/uvm-1.1d\win32\uvm_dpi.dll
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test complete_transfer_test...
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 0: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 100e608-100eaa4 to 1035a1c-1035eb8
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 109230: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 100eaa4 DST:1035eb8
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 109230: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 100eaa4-100ef40 to 1035eb8-1036354
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 218030: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 100ef40 DST:1036354
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 218030: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 100ef40-100f3dc to 1036354-10367f0
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 327490: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 100f3dc DST:10367f0
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 327490: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 100f3dc-100f878 to 10367f0-1036c8c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 437130: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 100f878 DST:1036c8c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 437130: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 100f878-100fd14 to 1036c8c-1037128
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 546170: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 100fd14 DST:1037128
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 546170: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 100fd14-10101b0 to 1037128-10375c4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 655830: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 10101b0 DST:10375c4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 655830: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 10101b0-101064c to 10375c4-1037a60
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 764710: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 101064c DST:1037a60
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 764710: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 101064c-1010ae8 to 1037a60-1037efc
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 873770: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1010ae8 DST:1037efc
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 873770: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1010ae8-1010f84 to 1037efc-1038398
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 982710: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1010f84 DST:1038398
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 982710: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1010f84-1011420 to 1038398-1038834
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1092010: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1011420 DST:1038834
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1092010: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1011420-10118bc to 1038834-1038cd0
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1200570: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 10118bc DST:1038cd0
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1200570: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 10118bc-1011d58 to 1038cd0-103916c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1309710: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1011d58 DST:103916c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1309710: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1011d58-10121f4 to 103916c-1039608
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1418910: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 10121f4 DST:1039608
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1418910: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 10121f4-1012690 to 1039608-1039aa4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1528230: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1012690 DST:1039aa4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1528230: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1012690-1012b2c to 1039aa4-1039f40
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1637370: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1012b2c DST:1039f40
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1637370: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1012b2c-1012fc8 to 1039f40-103a3dc
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1746530: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1012fc8 DST:103a3dc
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1746530: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1012fc8-1013464 to 103a3dc-103a878
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1855490: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1013464 DST:103a878
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1855490: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1013464-1013900 to 103a878-103ad14
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 1964090: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1013900 DST:103ad14
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 1964090: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1013900-1013d9c to 103ad14-103b1b0
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2072950: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1013d9c DST:103b1b0
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2072950: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1013d9c-1014238 to 103b1b0-103b64c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2181590: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1014238 DST:103b64c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2181590: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1014238-10146d4 to 103b64c-103bae8
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2291070: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 10146d4 DST:103bae8
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2291070: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 10146d4-1014b70 to 103bae8-103bf84
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2400790: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1014b70 DST:103bf84
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2400790: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1014b70-101500c to 103bf84-103c420
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2510230: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 101500c DST:103c420
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2510230: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 101500c-10154a8 to 103c420-103c8bc
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2619270: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 10154a8 DST:103c8bc
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2619270: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 10154a8-1015944 to 103c8bc-103cd58
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2728150: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1015944 DST:103cd58
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2728150: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1015944-1015de0 to 103cd58-103d1f4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2837090: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1015de0 DST:103d1f4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2837090: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1015de0-101627c to 103d1f4-103d690
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 2945650: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 101627c DST:103d690
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 2945650: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 101627c-1016718 to 103d690-103db2c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3054590: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1016718 DST:103db2c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 3054590: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1016718-1016bb4 to 103db2c-103dfc8
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3164250: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1016bb4 DST:103dfc8
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 3164250: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1016bb4-1017050 to 103dfc8-103e464
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3273130: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1017050 DST:103e464
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 3273130: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1017050-10174ec to 103e464-103e900
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3381970: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 10174ec DST:103e900
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 3381970: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 10174ec-1017988 to 103e900-103ed9c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3491770: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1017988 DST:103ed9c
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 3491770: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1017988-1017e24 to 103ed9c-103f238
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3600530: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 1017e24 DST:103f238
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 3600530: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 1017e24-10182c0 to 103f238-103f6d4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3709950: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 10182c0 DST:103f6d4
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 3709950: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Transfer block of 296 words from 10182c0-101875c to 103f6d4-103fb70
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 3819810: uvm_test_top.m_agent.m_sequencer@@trans_seq [run:] Finished transfer end addresses SRC: 101875c DST:103fb70
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 3819810: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tests/test_lib_pkg.sv(79) @ 3819810: uvm_test_top [** UVM TEST PASSED **] Number of errors: 0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   75
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [** UVM TEST PASSED **]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [run:]    70
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 3819810 ns  Iteration: 66  Instance: /top_tb
+# End time: 19:08:08 on Jan 19,2021, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0

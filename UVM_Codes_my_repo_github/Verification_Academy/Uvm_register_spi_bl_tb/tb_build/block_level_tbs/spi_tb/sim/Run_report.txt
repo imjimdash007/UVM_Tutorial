@@ -1,0 +1,102 @@
+# vsim -c -modelsimini modelsim.ini -do "run -all" hvl_top hdl_top "+UVM_TESTNAME=spi_interrupt_test" 
+# Start time: 19:38:30 on Jan 19,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.intr_bfm(fast)
+# Loading work.spi_driver_bfm(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.intr_pkg(fast)
+# Loading work.spi_reg_pkg(fast)
+# Loading work.spi_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.spi_env_pkg(fast)
+# Loading work.spi_bus_sequence_lib_pkg(fast)
+# Loading work.spi_test_seq_lib_pkg(fast)
+# Loading work.spi_test_lib_pkg(fast)
+# Loading work.apb_monitor_bfm(fast)
+# Loading work.apb_driver_bfm(fast)
+# Loading work.spi_monitor_bfm(fast)
+# Loading work.hvl_top(fast)
+# Loading work.hdl_top(fast)
+# Loading work.apb_monitor_bfm(fast)
+# Loading work.apb_driver_bfm(fast)
+# Loading work.spi_driver_bfm(fast)
+# Loading work.spi_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Compiling C:/Users/aj/AppData/Local/Temp\aj@DESKTOP-94R540N_dpi_8928\win32_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/aj/AppData/Local/Temp\aj@DESKTOP-94R540N_dpi_8928\win32_gcc-4.2.1\vsim_auto_compile.dll
+# Loading C:/questasim_10.6c/uvm-1.2\win32\uvm_dpi.dll
+# run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_interrupt_test...
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 67100: reporter [SPI_DRV_RUN:] Starting transmission: f7d982f02c6ec0e11bda374dd2e984d4 RX_NEG State 1, no of bits 32
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 4533000: reporter [SPI_DRV_RUN:] Starting transmission: c538f46ba1702e83a62f20bd49c7ee69 RX_NEG State 1, no of bits 126
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 7271000: reporter [SPI_DRV_RUN:] Starting transmission: 3d76021a0f05602d8808bda85a62d69e RX_NEG State 1, no of bits 97
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 11021000: reporter [SPI_DRV_RUN:] Starting transmission: b82ae1d560301e4af31f3f54e0188c45 RX_NEG State 1, no of bits 33
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 11427100: reporter [SPI_DRV_RUN:] Starting transmission: 953c6580cd3c614d25047b9e900fb4c RX_NEG State 0, no of bits 96
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 61525000: reporter [SPI_DRV_RUN:] Starting transmission: 1da370ba8b745859dd5a8104b0b51d00 RX_NEG State 1, no of bits 64
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 63151100: reporter [SPI_DRV_RUN:] Starting transmission: fb7d4381a796630e74bd6457e972b523 RX_NEG State 1, no of bits 63
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 65805100: reporter [SPI_DRV_RUN:] Starting transmission: 3cf39d203e18f0e490a9dfb6337a42a RX_NEG State 0, no of bits 65
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 74851100: reporter [SPI_DRV_RUN:] Starting transmission: 20cc63a05fc64be16824b0aa1fadcf2e RX_NEG State 0, no of bits 63
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 108049100: reporter [SPI_DRV_RUN:] Starting transmission: 29cc5c57ca6f5130be875c6f3cd8fb0f RX_NEG State 0, no of bits 95
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1271) @ 111567100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../env/spi_scoreboard.svh(237) @ 111567100: uvm_test_top.m_env.m_scoreboard [SPI_SB_REPORT:] Test Passed - 10 transfers occured with no errors
+# UVM_INFO ../env/spi_scoreboard.svh(238) @ 111567100: uvm_test_top.m_env.m_scoreboard [** UVM TEST PASSED **] Test Passed - 10 transfers occured with no errors
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 111567100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   17
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [** UVM TEST PASSED **]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [SPI_DRV_RUN:]    10
+# [SPI_SB_REPORT:]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 1115671 ns  Iteration: 68  Instance: /hvl_top
+# End time: 19:38:40 on Jan 19,2021, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0

@@ -1,0 +1,120 @@
+# vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi 
+# Start time: 15:48:15 on Jan 15,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/Examples_from_net/chip_verify/phasing/work.top
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/Examples_from_net/chip_verify/phasing/work.test_pkg
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/Examples_from_net/chip_verify/phasing/work.my_pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.my_pkg
+# Loading work.test_pkg
+# Loading work.top
+# Loading mtiUvm.questa_uvm_pkg
+# Loading C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO my_pkg.sv(185) @ 0: uvm_test_top.m_top_env [my_env] Build Phase
+# UVM_INFO my_pkg.sv(102) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Build Phase
+# UVM_INFO my_pkg.sv(27) @ 0: uvm_test_top.m_top_env.m_mon0 [my_monitor] Build Phase
+# UVM_INFO my_pkg.sv(107) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Connect Phase
+# UVM_INFO my_pkg.sv(32) @ 0: uvm_test_top.m_top_env.m_mon0 [my_monitor] Connect Phase
+# UVM_INFO my_pkg.sv(192) @ 0: uvm_test_top.m_top_env [my_env] Connect Phase
+# UVM_INFO my_pkg.sv(112) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] End Of Elaboration Phase
+# UVM_INFO my_pkg.sv(37) @ 0: uvm_test_top.m_top_env.m_mon0 [my_monitor] End Of Elaboration Phase
+# UVM_INFO my_pkg.sv(197) @ 0: uvm_test_top.m_top_env [my_env] End Of Elaboration Phase
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------
+# Name                 Type                    Size  Value
+# --------------------------------------------------------
+# uvm_test_top         base_test               -     @466 
+#   m_top_env          my_env                  -     @473 
+#     m_drv0           my_driver               -     @480 
+#       rsp_port       uvm_analysis_port       -     @495 
+#       seq_item_port  uvm_seq_item_pull_port  -     @487 
+#     m_mon0           my_monitor              -     @503 
+# --------------------------------------------------------
+# 
+# UVM_INFO my_pkg.sv(117) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Start Of Simulation Phase
+# UVM_INFO my_pkg.sv(42) @ 0: uvm_test_top.m_top_env.m_mon0 [my_monitor] Start Of Simulation Phase
+# UVM_INFO my_pkg.sv(202) @ 0: uvm_test_top.m_top_env [my_env] Start Of Simulation Phase
+# UVM_INFO my_pkg.sv(215) @ 0: uvm_test_top.m_top_env [my_env] Reset Phase
+# UVM_INFO my_pkg.sv(53) @ 0: uvm_test_top.m_top_env.m_mon0 [my_monitor] Reset Phase
+# UVM_INFO my_pkg.sv(130) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Reset Phase
+# UVM_INFO my_pkg.sv(220) @ 0: uvm_test_top.m_top_env [my_env] Configure Phase
+# UVM_INFO my_pkg.sv(58) @ 0: uvm_test_top.m_top_env.m_mon0 [my_monitor] Configure Phase
+# UVM_INFO my_pkg.sv(135) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Configure Phase
+# UVM_INFO my_pkg.sv(225) @ 0: uvm_test_top.m_top_env [my_env] Main Phase
+# UVM_INFO my_pkg.sv(63) @ 0: uvm_test_top.m_top_env.m_mon0 [my_monitor] Main Phase
+# UVM_INFO my_pkg.sv(209) @ 100: uvm_test_top.m_top_env [my_env] Run Phase - waited for #100ns
+# UVM_INFO my_pkg.sv(124) @ 200: uvm_test_top.m_top_env.m_drv0 [my_driver] Run Phase - wait for 200ns
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 200: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO my_pkg.sv(48) @ 400: uvm_test_top.m_top_env.m_mon0 [my_monitor] Run Phase waited for 400ns
+# UVM_INFO my_pkg.sv(142) @ 500: uvm_test_top.m_top_env.m_drv0 [my_driver] Main Phase - wait for 500ns
+# UVM_INFO my_pkg.sv(230) @ 500: uvm_test_top.m_top_env [my_env] Shutdown Phase
+# UVM_INFO my_pkg.sv(68) @ 500: uvm_test_top.m_top_env.m_mon0 [my_monitor] Shutdown Phase
+# UVM_INFO my_pkg.sv(148) @ 500: uvm_test_top.m_top_env.m_drv0 [my_driver] Shutdown Phase
+# UVM_INFO my_pkg.sv(153) @ 500: uvm_test_top.m_top_env.m_drv0 [my_driver] Extract Phase
+# UVM_INFO my_pkg.sv(73) @ 500: uvm_test_top.m_top_env.m_mon0 [my_monitor] Extract Phase
+# UVM_INFO my_pkg.sv(235) @ 500: uvm_test_top.m_top_env [my_env] Extract Phase
+# UVM_INFO my_pkg.sv(158) @ 500: uvm_test_top.m_top_env.m_drv0 [my_driver] Check Phase
+# UVM_INFO my_pkg.sv(78) @ 500: uvm_test_top.m_top_env.m_mon0 [my_monitor] Check Phase
+# UVM_INFO my_pkg.sv(240) @ 500: uvm_test_top.m_top_env [my_env] Check Phase
+# UVM_INFO my_pkg.sv(245) @ 500: uvm_test_top.m_top_env [my_env] Final Phase
+# UVM_INFO my_pkg.sv(163) @ 500: uvm_test_top.m_top_env.m_drv0 [my_driver] Final Phase
+# UVM_INFO my_pkg.sv(83) @ 500: uvm_test_top.m_top_env.m_mon0 [my_monitor] Final Phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   41
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [my_driver]    12
+# [my_env]    12
+# [my_monitor]    12
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 500 ps  Iteration: 99  Instance: /top
+# End time: 15:48:22 on Jan 15,2021, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 1

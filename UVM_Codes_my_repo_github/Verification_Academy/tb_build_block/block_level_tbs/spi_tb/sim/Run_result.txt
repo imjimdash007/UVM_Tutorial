@@ -1,0 +1,383 @@
+# vsim -c -do "run -all" hvl_top hdl_top "+UVM_TESTNAME=spi_interrupt_test" -suppress 8887 -sv_lib C:/questasim_10.6c/uvm-1.2/win32/uvm_dpi 
+# Start time: 21:10:55 on Jan 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U# vlog +incdir+../../../rtl/spi/rtl/verilog ../../../rtl/spi/rtl/verilog/*.v
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:43 on Jan 18,2021
+# vlog "+incdir+../../../rtl/spi/rtl/verilog" ../../../rtl/spi/rtl/verilog/spi_clgen.v ../../../rtl/spi/rtl/verilog/spi_defines.v ../../../rtl/spi/rtl/verilog/spi_shift.v ../../../rtl/spi/rtl/verilog/spi_top.v ../../../rtl/spi/rtl/verilog/timescale.v 
+# -- Compiling module spi_clgen
+# -- Compiling module spi_shift
+# -- Compiling module spi_top
+# 
+# Top level modules:
+# 	spi_top
+# End time: 21:10:43 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +incdir+../../../agents/apb_agent +incdir+../../../utils ../../../agents/apb_agent/apb_agent_pkg.sv -suppress 2263,13276
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:43 on Jan 18,2021
+# vlog "+incdir+../../../agents/apb_agent" "+incdir+../../../utils" ../../../agents/apb_agent/apb_agent_pkg.sv -suppress 2263,13276 
+# -- Compiling package apb_agent_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../../../agents/apb_agent/apb_agent_pkg.sv(22): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:44 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# vlog +incdir+../../../agents/spi_agent +incdir+../../../utils ../../../agents/spi_agent/spi_agent_pkg.sv -suppress 2263,13276
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:44 on Jan 18,2021
+# vlog "+incdir+../../../agents/spi_agent" "+incdir+../../../utils" ../../../agents/spi_agent/spi_agent_pkg.sv -suppress 2263,13276 
+# -- Compiling package spi_agent_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../../../agents/spi_agent/spi_agent_pkg.sv(22): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:45 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# vlog +incdir+../register_model ../register_model/spi_reg_pkg.sv -suppress 2263,13276
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:45 on Jan 18,2021
+# vlog "+incdir+../register_model" ../register_model/spi_reg_pkg.sv -suppress 2263,13276 
+# -- Compiling package spi_reg_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../register_model/spi_reg_pkg.sv(64): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:45 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../agents/apb_agent/apb_if.sv -timescale 1ns/10ps -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:45 on Jan 18,2021
+# vlog ../../../agents/apb_agent/apb_if.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface apb_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:45 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../agents/apb_agent/apb_monitor_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:45 on Jan 18,2021
+# vlog ../../../agents/apb_agent/apb_monitor_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface apb_monitor_bfm
+# -- Importing package apb_agent_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:46 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog ../../../agents/apb_agent/apb_driver_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:46 on Jan 18,2021
+# vlog ../../../agents/apb_agent/apb_driver_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface apb_driver_bfm
+# ** Note: (vlog-2286) ../../../agents/apb_agent/apb_driver_bfm.sv(36): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# -- Importing package apb_agent_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:46 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../agents/spi_agent/spi_if.sv -timescale 1ns/10ps -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:46 on Jan 18,2021
+# vlog ../../../agents/spi_agent/spi_if.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface spi_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:46 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../agents/spi_agent/spi_monitor_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:46 on Jan 18,2021
+# vlog ../../../agents/spi_agent/spi_monitor_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface spi_monitor_bfm
+# -- Importing package spi_agent_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:47 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog ../../../agents/spi_agent/spi_driver_bfm.sv -timescale 1ns/10ps -suppress 2263,13276
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:47 on Jan 18,2021
+# vlog ../../../agents/spi_agent/spi_driver_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface spi_driver_bfm
+# ** Note: (vlog-2286) ../../../agents/spi_agent/spi_driver_bfm.sv(30): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# -- Importing package spi_agent_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:47 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../utils/interrupt/intr_pkg.sv -timescale 1ns/10ps -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:48 on Jan 18,2021
+# vlog ../../../utils/interrupt/intr_pkg.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling package intr_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../../../utils/interrupt/intr_pkg.sv(22): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:48 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../utils/interrupt/intr_if.sv -timescale 1ns/10ps -suppress 2263,13276
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:48 on Jan 18,2021
+# vlog ../../../utils/interrupt/intr_if.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface intr_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:48 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../utils/interrupt/intr_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:48 on Jan 18,2021
+# vlog ../../../utils/interrupt/intr_bfm.sv -timescale 1ns/10ps -suppress 2263,13276 
+# -- Compiling interface intr_bfm
+# -- Importing package intr_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:49 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog +incdir+../env ../env/spi_env_pkg.sv -suppress 2263,13276
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:49 on Jan 18,2021
+# vlog "+incdir+../env" ../env/spi_env_pkg.sv -suppress 2263,13276 
+# -- Compiling package spi_env_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../env/spi_env_pkg.sv(26): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# -- Importing package apb_agent_pkg
+# -- Importing package spi_agent_pkg
+# -- Importing package spi_reg_pkg
+# -- Importing package intr_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:49 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog ../../../agents/spi_agent/spi_seq_item.svh -suppress 2263 -suppress 13276
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:49 on Jan 18,2021
+# vlog ../../../agents/spi_agent/spi_seq_item.svh -suppress 2263 -suppress 13276 
+# ** Note: (vlog-2286) ../../../agents/spi_agent/spi_seq_item.svh(21): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:50 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# vlog +incdir+../sequences ../sequences/spi_bus_sequence_lib_pkg.sv -suppress 2263 -suppress 13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:50 on Jan 18,2021
+# vlog "+incdir+../sequences" ../sequences/spi_bus_sequence_lib_pkg.sv -suppress 2263 -suppress 13276 
+# -- Compiling package spi_bus_sequence_lib_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../sequences/spi_bus_sequence_lib_pkg.sv(28): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# -- Importing package spi_env_pkg
+# -- Importing package apb_agent_pkg
+# -- Importing package spi_agent_pkg
+# -- Importing package spi_reg_pkg
+# -- Importing package intr_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:50 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog +incdir+../sequences ../sequences/spi_test_seq_lib_pkg.sv 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:50 on Jan 18,2021
+# vlog "+incdir+../sequences" ../sequences/spi_test_seq_lib_pkg.sv 
+# -- Compiling package spi_test_seq_lib_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../sequences/spi_test_seq_lib_pkg.sv(23): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# -- Importing package spi_agent_pkg
+# -- Importing package spi_env_pkg
+# -- Importing package apb_agent_pkg
+# -- Importing package spi_reg_pkg
+# -- Importing package intr_pkg
+# -- Importing package spi_bus_sequence_lib_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:51 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog +incdir+../test ../test/spi_test_lib_pkg.sv -suppress 2263,13276 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:51 on Jan 18,2021
+# vlog "+incdir+../test" ../test/spi_test_lib_pkg.sv -suppress 2263,13276 
+# -- Compiling package spi_test_lib_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# ** Note: (vlog-2286) ../test/spi_test_lib_pkg.sv(26): Using implicit +incdir+C:/questasim_10.6c/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+# -- Importing package spi_env_pkg
+# -- Importing package apb_agent_pkg
+# -- Importing package spi_agent_pkg
+# -- Importing package spi_reg_pkg
+# -- Importing package intr_pkg
+# -- Importing package spi_bus_sequence_lib_pkg
+# -- Importing package spi_test_seq_lib_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:10:52 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -timescale 1ns/10ps +incdir+../../../rtl/spi/rtl/verilog ../tb/hvl_top.sv 
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:52 on Jan 18,2021
+# vlog -timescale 1ns/10ps "+incdir+../../../rtl/spi/rtl/verilog" ../tb/hvl_top.sv 
+# -- Compiling module hvl_top
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# -- Importing package spi_test_lib_pkg
+# -- Importing package spi_env_pkg
+# -- Importing package apb_agent_pkg
+# -- Importing package spi_agent_pkg
+# -- Importing package spi_reg_pkg
+# -- Importing package intr_pkg
+# -- Importing package spi_bus_sequence_lib_pkg
+# -- Importing package spi_test_seq_lib_pkg
+# 
+# Top level modules:
+# 	hvl_top
+# End time: 21:10:52 on Jan 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -timescale 1ns/10ps +incdir+../../../rtl/spi/rtl/verilog ../tb/hdl_top.sv
+# QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 21:10:52 on Jan 18,2021
+# vlog -timescale 1ns/10ps "+incdir+../../../rtl/spi/rtl/verilog" ../tb/hdl_top.sv 
+# -- Compiling module hdl_top
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.2 Built-in)
+# 
+# Top level modules:
+# 	hdl_top
+# End time: 21:10:53 on Jan 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -c -do "run -all" hvl_top hdl_top +UVM_TESTNAME="spi_interrupt_test" -suppress 8887 -sv_lib C:/questasim_10.6c/uvm-1.2/win32/uvm_dpi
+# Reading C:/questasim_10.6c/tcl/vsim/pref.tcl
+# 
+# 10.6c
+# 
+# vsim -c -do "run -all" hvl_top hdl_top "+UVM_TESTNAME=spi_interrupt_test" -suppress 8887 -sv_lib C:/questasim_10.6c/uvm-1.2/win32/uvm_dpi 
+# Start time: 21:10:55 on Jan 18,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.intr_bfm(fast)
+# Loading work.spi_driver_bfm(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.intr_pkg(fast)
+# Loading work.spi_reg_pkg(fast)
+# Loading work.spi_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.spi_env_pkg(fast)
+# Loading work.spi_bus_sequence_lib_pkg(fast)
+# Loading work.spi_test_seq_lib_pkg(fast)
+# Loading work.spi_test_lib_pkg(fast)
+# Loading work.apb_monitor_bfm(fast)
+# Loading work.apb_driver_bfm(fast)
+# Loading work.spi_monitor_bfm(fast)
+# Loading work.hvl_top(fast)
+# Loading work.hdl_top(fast)
+# Loading work.apb_monitor_bfm(fast)
+# Loading work.apb_driver_bfm(fast)
+# Loading work.spi_driver_bfm(fast)
+# Loading work.spi_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Compiling C:/Users/aj/AppData/Local/Temp\aj@DESKTOP-94R540N_dpi_8064\win32_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/aj/AppData/Local/Temp\aj@DESKTOP-94R540N_dpi_8064\win32_gcc-4.2.1\vsim_auto_compile.dll
+# Loading C:/questasim_10.6c/uvm-1.2/win32/uvm_dpi.dll
+# run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_interrupt_test...
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 67100: reporter [SPI_DRV_RUN:] Starting transmission: f7d982f02c6ec0e11bda374dd2e984d4 RX_NEG State 1, no of bits 20
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 2949000: reporter [SPI_DRV_RUN:] Starting transmission: c538f46ba1702e83a62f20bd49c7ee69 RX_NEG State 1, no of bits 12
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 3407000: reporter [SPI_DRV_RUN:] Starting transmission: 3d76021a0f05602d8808bda85a62d69e RX_NEG State 1, no of bits 27
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 4637000: reporter [SPI_DRV_RUN:] Starting transmission: b82ae1d560301e4af31f3f54e0188c45 RX_NEG State 1, no of bits 21
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 4995100: reporter [SPI_DRV_RUN:] Starting transmission: 953c6580cd3c614d25047b9e900fb4c RX_NEG State 0, no of bits 10
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 10717000: reporter [SPI_DRV_RUN:] Starting transmission: 1da370ba8b745859dd5a8104b0b51d00 RX_NEG State 1, no of bits 14
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 11343100: reporter [SPI_DRV_RUN:] Starting transmission: fb7d4381a796630e74bd6457e972b523 RX_NEG State 1, no of bits 22
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 12521100: reporter [SPI_DRV_RUN:] Starting transmission: 3cf39d203e18f0e490a9dfb6337a42a RX_NEG State 0, no of bits 24
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 16155100: reporter [SPI_DRV_RUN:] Starting transmission: 20cc63a05fc64be16824b0aa1fadcf2e RX_NEG State 0, no of bits 14
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 24069100: reporter [SPI_DRV_RUN:] Starting transmission: 29cc5c57ca6f5130be875c6f3cd8fb0f RX_NEG State 0, no of bits 25
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1271) @ 25067100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../env/spi_scoreboard.svh(252) @ 25067100: uvm_test_top.m_env.m_scoreboard [SPI_SB_REPORT:] Test Passed - 10 transfers occured with no errors
+# UVM_INFO ../env/spi_scoreboard.svh(253) @ 25067100: uvm_test_top.m_env.m_scoreboard [** UVM TEST PASSED **] Test Passed - 10 transfers occured with no errors
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 25067100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   17
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [** UVM TEST PASSED **]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [SPI_DRV_RUN:]    10
+# [SPI_SB_REPORT:]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 250671 ns  Iteration: 68  Instance: /hvl_top
+# End time: 21:11:04 on Jan 18,2021, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0
+quit -f

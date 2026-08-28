@@ -1,0 +1,17 @@
+var g_data = {
+g4:[{dummy:0},
+{name:'MyCov',f:1,type:1,id:5,tb:'46',h:'16',m:'30',hp:'34.78%',cov:['63.88%','Y'],g:'100.00%',gp:['63.88%','Y'],opts:[[],['merge_instance','auto(true)']],parent:'4'},
+{name:'\\/test/MyClass::MyCov ',f:1,type:2,id:10,tb:'46',h:'16',m:'30',hp:'34.78%',cov:['63.88%','Y'],g:'100.00%',gp:['63.88%','Y'],opts:[[],['per_instance','true']],cvg:'MyCov',parent:'5'}],
+c5:{name:'MyCov',type:1,pHash:'4',pPath:'/test/MyClass',totals:[10,8,'80.00%','Y',36,8,'22.22%','R'],cvp:[{dummy:0},
+{name:'cp0',f:1,type:4,id:6,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'5'},
+{name:'cp1',f:1,type:4,id:7,tb:'3',h:'1',m:'2',hp:'33.33%',cov:['33.33%','R'],g:'100.00%',gp:['33.33%','R'],hasb:1,parent:'5'},
+{name:'cp2',f:1,type:4,id:8,tb:'3',h:'3',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'5'}],crx:[{dummy:0},
+{name:'mycross0',f:1,type:5,id:9,tb:'36',h:'8',m:'28',hp:'22.22%',cov:['22.22%','R'],g:'100.00%',gp:['22.22%','R'],hasb:1,parent:'5',cross:['cp0','cp1','cp2']}]},
+c10:{name:'\\/test/MyClass::MyCov ',type:2,pHash:'4',pPath:'/test/MyClass',totals:[10,8,'80.00%','Y',36,8,'22.22%','R'],cvp:[{dummy:0},
+{name:'cp0',f:1,type:4,id:11,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'10'},
+{name:'cp1',f:1,type:4,id:12,tb:'3',h:'1',m:'2',hp:'33.33%',cov:['33.33%','R'],g:'100.00%',gp:['33.33%','R'],hasb:1,parent:'10'},
+{name:'cp2',f:1,type:4,id:13,tb:'3',h:'3',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'10'}],crx:[{dummy:0},
+{name:'mycross0',f:1,type:5,id:14,tb:'36',h:'8',m:'28',hp:'22.22%',cov:['22.22%','R'],g:'100.00%',gp:['22.22%','R'],hasb:1,parent:'10',cross:['cp0','cp1','cp2']}]},
+dummyEnd:0
+};
+processCovergroupsData(g_data);

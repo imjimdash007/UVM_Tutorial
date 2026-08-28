@@ -1,0 +1,7 @@
+---Bit different from other projects since this requires uvm1.2 ---
+
+1. Copy the modelsim.ini from c:\questasim_10.6c  
+2. Edit the local modelsim.ini and update the uvm1.1d to uvm1.2 
+3. Open the questasim gui from bash command 
+4. Make a new project say abc from questasim 
+5. make all from the questasim propmpt in the gui 

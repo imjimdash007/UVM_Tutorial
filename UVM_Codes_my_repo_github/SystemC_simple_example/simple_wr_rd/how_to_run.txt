@@ -1,0 +1,5 @@
+sccom -work work -stats=none main.cpp 
+sccom -link -work work
+vsim -c -novopt work.sc_main
+run -a
+quit -f

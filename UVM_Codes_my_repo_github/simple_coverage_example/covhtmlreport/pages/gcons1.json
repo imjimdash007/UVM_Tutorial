@@ -1,0 +1,4 @@
+var g_db_data = [
+{dummy:0},
+{name:'MyCov',f:1,type:6,id:5,tb:'46',h:'16',m:'30',hp:'34.78%',cov:['63.88%','Y'],g:'100.00%',gp:['63.88%','Y'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/test/MyClass',parent:'4'}];
+processConsCovergroupsData(g_db_data);

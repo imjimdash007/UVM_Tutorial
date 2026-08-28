@@ -1,0 +1,315 @@
+# vsim -c opt "+UVM_TESTNAME=sfr_test" -do "run -a; quit -f" 
+# Start time: 08:46:57 on Jan 19,2021
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.sfr_monitor_bfm(fast)
+# Loading work.sfr_master_bfm(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.sfr_agent_pkg(fast)
+# Loading work.tb_params_pkg(fast)
+# Loading work.hdl_top(fast)
+# Loading work.sfr_test_pkg(fast)
+# Loading work.hvl_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim_10.6c/uvm-1.1d\win32\uvm_dpi.dll
+# run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test sfr_test...
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 3770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 137942067
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 3770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 137942067
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 4410: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1708321462
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 4410: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1708321462
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 5970: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3818468992
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 5970: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3818468992
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 8970: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1221711334
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 8970: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1221711334
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 9050: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1211862937
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 9050: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1211862937
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 9370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 420934085
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 9370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 420934085
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 11770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3339684342
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 11770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3339684342
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 11930: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 962426765
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 11930: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 962426765
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 13130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 804832426
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 13130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 804832426
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 17690: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 872511884
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 17690: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 872511884
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 21370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1741869518
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 21370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1741869518
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 21650: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 537697869
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 21650: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 537697869
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 24570: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2502074792
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 24570: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2502074792
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 24730: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 721260153
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 24730: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 721260153
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 25810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1338215311
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 25810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1338215311
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 26130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3594228245
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 26130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3594228245
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 27850: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3956360016
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 27850: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3956360016
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 29610: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3246231925
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 29610: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3246231925
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 30770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 233632224
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 30770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 233632224
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 31290: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 771756830
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 31290: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 771756830
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 32090: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 141666177
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 32090: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 141666177
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 32570: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2262221701
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 32570: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2262221701
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 32970: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1126790600
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 32970: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1126790600
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 33650: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2381491282
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 33650: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2381491282
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 34130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 563887541
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 34130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 563887541
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 34370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 381570880
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 34370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 381570880
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 34450: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 259640322
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 34450: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 259640322
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 34770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1992418868
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 34770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1992418868
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 35050: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3363270584
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 35050: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3363270584
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 36450: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3808072894
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 36450: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3808072894
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 37770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4080993590
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 37770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4080993590
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 38370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1562241186
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 38370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1562241186
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 38890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2941698842
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 38890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2941698842
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 39810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 399427265
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 39810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 399427265
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 40010: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2055287377
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 40010: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2055287377
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 40050: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1530459708
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 40050: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1530459708
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 41530: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4115332884
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 41530: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4115332884
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 42250: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3221970451
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 42250: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3221970451
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 44050: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 224166135
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 44050: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 224166135
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 44530: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2387708503
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 44530: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2387708503
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 44650: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2492117005
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 44650: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2492117005
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 45370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3446209830
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 45370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3446209830
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 45450: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3404754015
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 45450: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3404754015
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 45810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 563887541
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 45810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 563887541
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 46210: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3437374212
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 46210: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3437374212
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 47010: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4126023685
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 47010: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4126023685
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 47410: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2757939477
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 47410: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2757939477
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 48650: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4228572625
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 48650: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4228572625
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 48810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3653942564
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 48810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3653942564
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 49450: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3839484256
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 49450: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3839484256
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 50090: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 16443459
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 50090: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 16443459
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 50850: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 995770868
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 50850: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 995770868
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 50930: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2862039737
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 50930: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2862039737
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 51490: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1417526795
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 51490: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1417526795
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 51730: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2507400517
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 51730: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2507400517
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 51810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3164442085
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 51810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3164442085
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 52730: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2899746864
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 52730: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2899746864
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 52890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 870587960
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 52890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 870587960
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 53170: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2903652649
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 53170: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2903652649
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 54090: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1220282993
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 54090: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1220282993
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 54330: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 823200327
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 54330: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 823200327
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 55170: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1348991674
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 55170: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1348991674
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 55890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2633028477
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 55890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2633028477
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 55930: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1455413831
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 55930: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1455413831
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 56810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 329138364
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 56810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 329138364
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 57250: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3638554975
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 57250: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3638554975
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 57770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3254266435
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 57770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3254266435
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 58130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1652030212
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 58130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1652030212
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 59370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1809421668
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 59370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1809421668
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 59970: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4254881370
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 59970: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4254881370
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 60210: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1010609674
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 60210: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1010609674
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 60490: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1955735348
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 60490: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1955735348
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 61130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2027300620
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 61130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2027300620
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 61410: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4094049229
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 61410: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4094049229
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 61730: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2497009795
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 61730: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2497009795
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 61890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2903652649
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 61890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2903652649
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 62330: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1375010251
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 62330: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1375010251
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 62890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1723428701
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 62890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1723428701
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 64770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2724626979
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 64770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2724626979
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 65050: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3969514498
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 65050: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3969514498
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 65090: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4106430282
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 65090: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4106430282
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 65490: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1527274016
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 65490: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1527274016
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 66050: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2154105852
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 66050: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2154105852
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 66130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1823232471
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 66130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1823232471
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 66330: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3576040875
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 66330: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3576040875
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 66770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 913976373
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 66770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 913976373
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 67250: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 817973090
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 67250: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 817973090
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 67970: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1839289454
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 67970: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1839289454
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 68130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 613002245
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 68130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 613002245
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 68250: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3595821345
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 68250: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3595821345
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 68570: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3567917186
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 68570: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3567917186
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 69090: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2309958751
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 69090: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2309958751
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 69370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 601254183
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 69370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 601254183
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 69730: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2944188224
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 69730: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2944188224
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 70570: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3375304523
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 70570: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3375304523
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 71050: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3058341404
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 71050: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3058341404
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 71210: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4053792917
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 71210: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4053792917
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 71650: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 607646930
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 71650: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 607646930
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 72410: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 500099466
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 72410: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 500099466
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 72890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1947984490
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 72890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1947984490
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 73690: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3071522060
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 73690: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3071522060
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 73730: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4113020273
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 73730: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4113020273
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 74130: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 2406413570
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 74130: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 2406413570
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 74850: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1074617237
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 74850: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1074617237
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 75170: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1276224430
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 75170: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1276224430
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 76290: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3204008509
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 76290: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3204008509
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 78370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 722598206
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 78370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 722598206
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 78690: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 760694485
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 78690: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 760694485
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 78770: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1169205804
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 78770: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1169205804
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 79330: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1338887136
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 79330: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1338887136
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 79370: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 526194616
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 79370: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 526194616
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 79810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1348016123
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 79810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1348016123
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 79890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3153831983
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 79890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3153831983
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 80290: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3808136269
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 80290: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3808136269
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 80850: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4052247514
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 80850: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4052247514
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 80890: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3122780423
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 80890: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3122780423
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 81010: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3852051324
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 81010: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3852051324
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 81210: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 3896831583
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 81210: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 3896831583
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 81490: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 967203267
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 81490: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 967203267
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 81690: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 607646930
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 81690: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 607646930
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 81810: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 1079494522
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 81810: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 1079494522
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(63) @ 81930: uvm_test_top.env.sb [** SCOREBOARD **]  mem[t.address] = 4148078045
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(64) @ 81930: uvm_test_top.env.sb [** SCOREBOARD **]  t.read_data    = 4148078045
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 81970: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../sfr_test_pkg/sfr_scoreboard.svh(77) @ 81970: uvm_test_top.env.sb [** UVM TEST PASSED **] SFR agent test passed with no errors in 122 valid read scenarios
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  249
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [** SCOREBOARD **]   244
+# [** UVM TEST PASSED **]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 81970 ns  Iteration: 61  Instance: /hvl_top
+# End time: 08:47:01 on Jan 19,2021, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

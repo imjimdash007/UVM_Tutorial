@@ -1,0 +1,125 @@
+# vsim -c work.tb_top -suppress vlog-2745 
+# Start time: 22:00:27 on Jan 15,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.tb_top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim_10.6c/uvm-1.1d\win32\uvm_dpi.dll
+run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               base_test               -     @466 
+#   m_top_env                top_env                 -     @473 
+#     m_apb_agent            apb_agent               -     @484 
+#       m_apb_drv            apb_driver              -     @724 
+#         rsp_port           uvm_analysis_port       -     @739 
+#         seq_item_port      uvm_seq_item_pull_port  -     @731 
+#       m_apb_mon            apb_monitor             -     @747 
+#       m_apb_seqr           uvm_sequencer           -     @615 
+#         rsp_export         uvm_analysis_export     -     @622 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @716 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     m_spi_agent            spi_agent               -     @498 
+#       m_spi_drv            spi_driver              -     @869 
+#         rsp_port           uvm_analysis_port       -     @884 
+#         seq_item_port      uvm_seq_item_pull_port  -     @876 
+#       m_spi_mon            spi_monitor             -     @892 
+#       m_spi_seqr           uvm_sequencer           -     @760 
+#         rsp_export         uvm_analysis_export     -     @767 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @861 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     m_virt_seq             virtual_sequencer       -     @505 
+#       rsp_export           uvm_analysis_export     -     @512 
+#       seq_item_export      uvm_seq_item_pull_imp   -     @606 
+#       arbitration_queue    array                   0     -    
+#       lock_queue           array                   0     -    
+#       num_last_reqs        integral                32    'd1  
+#       num_last_rsps        integral                32    'd1  
+#     m_wb_agent             wb_agent                -     @491 
+#       m_wb_drv             wb_driver               -     @1019
+#         rsp_port           uvm_analysis_port       -     @1034
+#         seq_item_port      uvm_seq_item_pull_port  -     @1026
+#       m_wb_mon             wb_monitor              -     @1042
+#       m_wb_seqr            uvm_sequencer           -     @910 
+#         rsp_export         uvm_analysis_export     -     @917 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @1011
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO my_pkg.sv(68) @ 0: uvm_test_top.m_top_env.m_virt_seq@@m_virt_seq [VSEQ] Start of virtual sequence
+# UVM_INFO wb_agent.sv(63) @ 0: uvm_test_top.m_top_env.m_wb_agent.m_wb_seqr@@m_wb_reset_seq [RESET_SEQ] Starting wb_reset_seq
+# UVM_INFO apb_agent.sv(52) @ 20000: uvm_test_top.m_top_env.m_apb_agent.m_apb_seqr@@m_apb_rw_seq [RW_SEQ] Starting apb_rw_seq
+# UVM_INFO spi_agent.sv(74) @ 30000: uvm_test_top.m_top_env.m_spi_agent.m_spi_seqr@@m_spi_tx_seq [tx_SEQ] Starting spi_tx_seq
+# UVM_INFO my_pkg.sv(75) @ 30000: uvm_test_top.m_top_env.m_virt_seq@@m_virt_seq [VSEQ] End of virtual sequence
+# UVM_INFO my_pkg.sv(108) @ 30000: uvm_test_top [SHUT] Shutting down test ...
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   10
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RESET_SEQ]     1
+# [RNTST]     1
+# [RW_SEQ]     1
+# [SHUT]     1
+# [UVMTOP]     1
+# [VSEQ]     2
+# [tx_SEQ]     1
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 30 ns  Iteration: 110  Instance: /tb_top
+# End time: 22:00:35 on Jan 15,2021, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0

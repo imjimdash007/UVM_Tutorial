@@ -1,0 +1,7 @@
+## I did a little change for questasim --> the default was irun.f 
+
+vlog -work work -vopt -sv -f questa.f +incdir+. +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+
+vsim -c work.tb_top -suppress vlog-2745 +UVM_TESTNAME=reg_test1
+
+run -a

@@ -1,0 +1,41 @@
+E:/Programming/UVM/UVM_Hello_World/my_driver.svh {0 {vlog -work work -vopt -sv -stats=none E:/Programming/UVM/UVM_Hello_World/my_driver.svh
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+** Error: (vlog-13069) E:/Programming/UVM/UVM_Hello_World/my_driver.svh(1): near "uvm_driver": syntax error, unexpected IDENTIFIER.
+** Error: E:/Programming/UVM/UVM_Hello_World/my_driver.svh(1): Error in class extension specification.
+
+} {3.0 5.0} {}} E:/Programming/UVM/UVM_Hello_World/design.sv {1 {vlog -work work -vopt -sv -stats=none E:/Programming/UVM/UVM_Hello_World/design.sv
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling interface dut_if
+** Note: (vlog-2286) E:/Programming/UVM/UVM_Hello_World/design.sv(10): Using implicit +incdir+D:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling module dut
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	dut
+
+} {} {}} E:/Programming/UVM/UVM_Hello_World/my_sequence.svh {0 {vlog -work work -vopt -sv -stats=none E:/Programming/UVM/UVM_Hello_World/my_sequence.svh
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+** Error: (vlog-13069) E:/Programming/UVM/UVM_Hello_World/my_sequence.svh(1): near "uvm_sequence_item": syntax error, unexpected IDENTIFIER.
+** Error: E:/Programming/UVM/UVM_Hello_World/my_sequence.svh(1): Error in class extension specification.
+
+} {3.0 5.0} {}} E:/Programming/UVM/UVM_Hello_World/my_testbench_pkg.svh {0 {vlog -work work -vopt -sv -stats=none E:/Programming/UVM/UVM_Hello_World/my_testbench_pkg.svh
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package my_testbench_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Error: ** while parsing file included at E:/Programming/UVM/UVM_Hello_World/my_testbench_pkg.svh(5)
+** at my_sequence.svh(3): (vlog-2163) Macro `uvm_object_utils is undefined.
+** Error: (vlog-13069) ** while parsing file included at E:/Programming/UVM/UVM_Hello_World/my_testbench_pkg.svh(5)
+** at my_sequence.svh(3): near "(": syntax error, unexpected '(', expecting function or task or "SystemVerilog keyword 'pure'".
+
+} {5.0 6.0 7.0 8.0} {}} E:/Programming/UVM/UVM_Hello_World/testbench.sv {1 {vlog -work work -vopt -sv -stats=none E:/Programming/UVM/UVM_Hello_World/testbench.sv
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 26 2017
+** Note: (vlog-2286) E:/Programming/UVM/UVM_Hello_World/testbench.sv(8): Using implicit +incdir+D:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package my_testbench_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module top
+-- Importing package my_testbench_pkg
+
+Top level modules:
+	top
+
+} {} {}}

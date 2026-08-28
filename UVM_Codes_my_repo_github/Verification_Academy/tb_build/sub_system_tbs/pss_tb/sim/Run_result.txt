@@ -1,0 +1,222 @@
+# vsim -c work.hvl_top work.hdl_top -suppress 8887,7063 -qwavedb=+signal+class -do "run -a; quit" "+UVM_TESTNAME=pss_spi_interrupt_test" 
+# Start time: 14:41:18 on Jan 16,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: ../../../rtl/ahb2apb/rtl/ahb_apb_bridge.sv(181): (vopt-2576) [BSOB] - Bit-select into 'slave_select' is out of bounds.
+# ** Warning: ../../../rtl/ahb2apb/rtl/ahb_apb_bridge.sv(184): (vopt-2576) [BSOB] - Bit-select into 'slave_select' is out of bounds.
+# ** Warning: ../../../rtl/ahb2apb/rtl/ahb_apb_bridge.sv(187): (vopt-2576) [BSOB] - Bit-select into 'slave_select' is out of bounds.
+# ** Warning: ../../../rtl/ahb2apb/rtl/ahb_apb_bridge.sv(190): (vopt-2576) [BSOB] - Bit-select into 'slave_select' is out of bounds.
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.intr_bfm(fast)
+# Loading work.ahb_driver_bfm(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.gpio_reg_pkg(fast)
+# Loading work.spi_reg_pkg(fast)
+# Loading work.pss_reg_pkg(fast)
+# Loading work.ahb_agent_pkg(fast)
+# Loading work.intr_pkg(fast)
+# Loading work.spi_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.spi_env_pkg(fast)
+# Loading work.intr_if(fast)
+# Loading work.gpio_agent_pkg(fast)
+# Loading work.gpio_env_pkg(fast)
+# Loading work.pss_env_pkg(fast)
+# Loading work.spi_bus_sequence_lib_pkg(fast)
+# Loading work.spi_test_seq_lib_pkg(fast)
+# Loading work.gpio_bus_sequence_lib_pkg(fast)
+# Loading work.gpio_test_sequence_lib_pkg(fast)
+# Loading work.pss_test_seq_lib_pkg(fast)
+# Loading work.pss_test_lib_pkg(fast)
+# Loading work.apb_monitor_bfm(fast)
+# Loading work.spi_monitor_bfm(fast)
+# Loading work.spi_driver_bfm(fast)
+# Loading work.gpio_monitor_bfm(fast)
+# Loading work.gpio_driver_bfm(fast)
+# Loading work.ahb_monitor_bfm(fast)
+# Loading work.hvl_top(fast)
+# Loading work.modem_monitor_bfm(fast)
+# Loading work.modem_driver_bfm(fast)
+# Loading work.modem_agent_pkg(fast)
+# Loading work.uart_monitor_bfm(fast)
+# Loading work.uart_driver_bfm(fast)
+# Loading work.uart_agent_pkg(fast)
+# Loading work.hdl_top(fast)
+# Loading work.apb_monitor_bfm(fast)
+# Loading work.ahb_monitor_bfm(fast)
+# Loading work.ahb_driver_bfm(fast)
+# Loading work.spi_driver_bfm(fast)
+# Loading work.modem_driver_bfm(fast)
+# Loading work.pss(fast)
+# Loading work.ahb_apb_bridge(fast)
+# Loading work.spi_top(fast)
+# Loading work.gpio_top(fast)
+# Loading work.icpit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.apb_driver_bfm(fast)
+# Loading C:/questasim_10.6c/uvm-1.1d\win32\uvm_dpi.dll
+# run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test pss_spi_interrupt_test...
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 118000: reporter [SPI_DRV_RUN:] Starting transmission: 93bc6065c3bce730be21790d8b78481 RX_NEG State 1, no of bits 30
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 630000: reporter [SPI_DRV_RUN:] Starting transmission: 88942b14a9d96a1e7d94f177b77a3197 RX_NEG State 0, no of bits 17
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 3220100: reporter [SPI_DRV_RUN:] Starting transmission: 7130211e03851c1eed26ae39d7b4159f RX_NEG State 1, no of bits 1
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 3536100: reporter [SPI_DRV_RUN:] Starting transmission: a3bb869cd2f4a2f1756010db475eb8f4 RX_NEG State 1, no of bits 26
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 10676000: reporter [SPI_DRV_RUN:] Starting transmission: 633a963c8effce7b28964b58d2e9444a RX_NEG State 0, no of bits 21
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 22024000: reporter [SPI_DRV_RUN:] Starting transmission: a7022795933a8a4a54eb3a7a8c11f906 RX_NEG State 0, no of bits 23
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 22480000: reporter [SPI_DRV_RUN:] Starting transmission: 419d8382c994fe21f8bcb1891577d0d5 RX_NEG State 0, no of bits 14
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 26530100: reporter [SPI_DRV_RUN:] Starting transmission: 226b38a59f22b1765bcd5d22e0fdd567 RX_NEG State 1, no of bits 20
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 27038100: reporter [SPI_DRV_RUN:] Starting transmission: b6e0aa501d17901c2352f0b86555d5f5 RX_NEG State 1, no of bits 5
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 30138100: reporter [SPI_DRV_RUN:] Starting transmission: 9cd808a8e5e851792d0ca28f928da9c1 RX_NEG State 1, no of bits 3
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 30454100: reporter [SPI_DRV_RUN:] Starting transmission: 9f2b1215d6980c5645aaef162173850 RX_NEG State 1, no of bits 3
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 31626100: reporter [SPI_DRV_RUN:] Starting transmission: eb3800d7f00e8226f393dbd114e1a3e4 RX_NEG State 1, no of bits 25
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 31990100: reporter [SPI_DRV_RUN:] Starting transmission: dbecea3468f70157d2a630282847b86f RX_NEG State 1, no of bits 21
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 33714100: reporter [SPI_DRV_RUN:] Starting transmission: ab5229cf714001c009469d98936fed6b RX_NEG State 0, no of bits 30
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 34330000: reporter [SPI_DRV_RUN:] Starting transmission: acc5e810f8faddc86d8bd7da143d1231 RX_NEG State 1, no of bits 14
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 35584000: reporter [SPI_DRV_RUN:] Starting transmission: 8dd13ecd192fbf3dfdbc4ed517da35ef RX_NEG State 0, no of bits 29
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 43506100: reporter [SPI_DRV_RUN:] Starting transmission: 53359c5958844f3892f47bc5dd489041 RX_NEG State 1, no of bits 26
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 50658100: reporter [SPI_DRV_RUN:] Starting transmission: f7e6071a4e91457171a139dcfa2ed0f5 RX_NEG State 1, no of bits 15
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 51466000: reporter [SPI_DRV_RUN:] Starting transmission: 8a526d61c3191817f5c90149abfe923d RX_NEG State 0, no of bits 9
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 51772000: reporter [SPI_DRV_RUN:] Starting transmission: 69c42662369ac9debf2cf06030c1dfc0 RX_NEG State 0, no of bits 11
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 52478100: reporter [SPI_DRV_RUN:] Starting transmission: 9696cc5dc95bbc7d30ecc2e95e0a8df9 RX_NEG State 1, no of bits 25
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 59370100: reporter [SPI_DRV_RUN:] Starting transmission: a8590a1d5e1709106c7568632546f8e2 RX_NEG State 0, no of bits 12
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 61268100: reporter [SPI_DRV_RUN:] Starting transmission: 264c6604ba07a787f4e0689eb46203ff RX_NEG State 1, no of bits 21
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 64368100: reporter [SPI_DRV_RUN:] Starting transmission: 75258b55f39baa95e2e75a86402dc844 RX_NEG State 1, no of bits 7
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 64900100: reporter [SPI_DRV_RUN:] Starting transmission: c2f9eae00d424a1821c0cd6fd46e6f3d RX_NEG State 0, no of bits 2
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 66440000: reporter [SPI_DRV_RUN:] Starting transmission: 6e24365b0a227fcfe3377d42e41e5a9c RX_NEG State 0, no of bits 5
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 66818000: reporter [SPI_DRV_RUN:] Starting transmission: 629e2dfa2ea7b092fac60e6619ad18a0 RX_NEG State 0, no of bits 11
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 67144100: reporter [SPI_DRV_RUN:] Starting transmission: 8b06b8f216ba796fac68a9e5f2449ef4 RX_NEG State 1, no of bits 15
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 68460100: reporter [SPI_DRV_RUN:] Starting transmission: 9475eeeac20c8b9a3bd1ff6a82a7147f RX_NEG State 0, no of bits 15
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 69020000: reporter [SPI_DRV_RUN:] Starting transmission: b08c56290d84ce8512ac45736e83a237 RX_NEG State 0, no of bits 18
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 69952000: reporter [SPI_DRV_RUN:] Starting transmission: 32a8ac4e2b28d92e76fdc674165220b7 RX_NEG State 0, no of bits 12
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 71870000: reporter [SPI_DRV_RUN:] Starting transmission: 33005c269ba2bd8f80cdb6aeaaf97243 RX_NEG State 0, no of bits 30
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 72272100: reporter [SPI_DRV_RUN:] Starting transmission: 3a95ba96beed00f8889e6c9e3f381c71 RX_NEG State 1, no of bits 10
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 77940000: reporter [SPI_DRV_RUN:] Starting transmission: e168b479c9953bcb34f133b0083699c4 RX_NEG State 1, no of bits 16
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 78524000: reporter [SPI_DRV_RUN:] Starting transmission: 48ecb1ae411077df1f3a4d75c139f8e2 RX_NEG State 0, no of bits 9
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 78982000: reporter [SPI_DRV_RUN:] Starting transmission: 8e8a601b906c61f121a25fc3fca1ae29 RX_NEG State 1, no of bits 3
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 79376000: reporter [SPI_DRV_RUN:] Starting transmission: bedb6c12a8a78008090281ddf02ba118 RX_NEG State 0, no of bits 28
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 94362100: reporter [SPI_DRV_RUN:] Starting transmission: 4989b8074a56ee2854c81edda92bc859 RX_NEG State 1, no of bits 31
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 102814100: reporter [SPI_DRV_RUN:] Starting transmission: cd50f1190e7c9237b9ad79328cfbc973 RX_NEG State 0, no of bits 6
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 103298000: reporter [SPI_DRV_RUN:] Starting transmission: 3235d0f6abddfba23a17b68b3d6c0472 RX_NEG State 1, no of bits 31
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 104220100: reporter [SPI_DRV_RUN:] Starting transmission: a5c1302c3e142bca433f87656bdd7357 RX_NEG State 1, no of bits 1
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 104584100: reporter [SPI_DRV_RUN:] Starting transmission: d2fd9505112ffea1f984545909463bc5 RX_NEG State 1, no of bits 11
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 104892100: reporter [SPI_DRV_RUN:] Starting transmission: be23478823575fe8c656452186ac0c62 RX_NEG State 0, no of bits 5
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 105868000: reporter [SPI_DRV_RUN:] Starting transmission: cba08e7a90c9d83a13ed80c1f0d61a7a RX_NEG State 1, no of bits 20
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 106218000: reporter [SPI_DRV_RUN:] Starting transmission: d4590b08c05214c29dfe7d52e8c84a6d RX_NEG State 1, no of bits 27
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 107476000: reporter [SPI_DRV_RUN:] Starting transmission: 8f6f1928c84264e5ed17844df02ee986 RX_NEG State 1, no of bits 25
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 108062100: reporter [SPI_DRV_RUN:] Starting transmission: c9a6de983d8d0fe86e29f6e7ec2ecf32 RX_NEG State 0, no of bits 28
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 110236000: reporter [SPI_DRV_RUN:] Starting transmission: cc71a70624d20d2507bb4d4bbfbea7c RX_NEG State 1, no of bits 16
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 111638100: reporter [SPI_DRV_RUN:] Starting transmission: 71ec1326abae5de4fec05e7debbd89af RX_NEG State 0, no of bits 28
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 112128100: reporter [SPI_DRV_RUN:] Starting transmission: dab6880d265e872782fcc1365e3e21b4 RX_NEG State 0, no of bits 12
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 115652100: reporter [SPI_DRV_RUN:] Starting transmission: a1d4f0859b311bf6bbde3c11c06e070 RX_NEG State 1, no of bits 3
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 117708000: reporter [SPI_DRV_RUN:] Starting transmission: c3b1384a415c489fff310c13997c86b8 RX_NEG State 0, no of bits 23
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 118432000: reporter [SPI_DRV_RUN:] Starting transmission: d64823ecdd2398d77fcaaf1309b08262 RX_NEG State 0, no of bits 15
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 119022100: reporter [SPI_DRV_RUN:] Starting transmission: 77cbfbcc1b9de41e444e8eb0f37ac6ca RX_NEG State 1, no of bits 22
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 120082000: reporter [SPI_DRV_RUN:] Starting transmission: 40f8562d5d00c0d55ff2e519897fc42e RX_NEG State 0, no of bits 27
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 134526000: reporter [SPI_DRV_RUN:] Starting transmission: 1dcf69a7458ac6f74fcf3166b6b57272 RX_NEG State 1, no of bits 16
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 135916000: reporter [SPI_DRV_RUN:] Starting transmission: 3890f81c210f49359760d9c47305818f RX_NEG State 0, no of bits 19
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 136274100: reporter [SPI_DRV_RUN:] Starting transmission: 276f0fa4b682179b4f8aa30fd6073383 RX_NEG State 1, no of bits 17
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 137154000: reporter [SPI_DRV_RUN:] Starting transmission: ed13bba6bef7a10ed43b7207646eb205 RX_NEG State 1, no of bits 30
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 137556100: reporter [SPI_DRV_RUN:] Starting transmission: 8b93b0c4e3e35392509fefa60cbb0470 RX_NEG State 0, no of bits 13
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 138736000: reporter [SPI_DRV_RUN:] Starting transmission: 1e43ece09f951c589402668c75475d3a RX_NEG State 0, no of bits 6
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 142370100: reporter [SPI_DRV_RUN:] Starting transmission: 373f70c0ea5e784071137e0e6f67f1f3 RX_NEG State 0, no of bits 14
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 146402100: reporter [SPI_DRV_RUN:] Starting transmission: 7d111afe786a9e1d1135e7e6cdd1914 RX_NEG State 0, no of bits 4
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 146814000: reporter [SPI_DRV_RUN:] Starting transmission: 435150c5925f878c501abbd118c4d7e1 RX_NEG State 0, no of bits 22
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 150050100: reporter [SPI_DRV_RUN:] Starting transmission: 8f77d483bb64da6a7d5c3342bf20a228 RX_NEG State 1, no of bits 28
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 157722100: reporter [SPI_DRV_RUN:] Starting transmission: a0b06b91674e0a5ad38fe181e56fa484 RX_NEG State 0, no of bits 15
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 158108100: reporter [SPI_DRV_RUN:] Starting transmission: dae2ebaf1d4e37b5e7244fdad6b90b64 RX_NEG State 0, no of bits 26
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 158688100: reporter [SPI_DRV_RUN:] Starting transmission: 7b9e6a053fade3d7e5506d7dd50f17f RX_NEG State 1, no of bits 12
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 159400100: reporter [SPI_DRV_RUN:] Starting transmission: 365bd534135a0ea8fc331e32363aa331 RX_NEG State 1, no of bits 28
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 167060000: reporter [SPI_DRV_RUN:] Starting transmission: 3f57939754d15ba9e9bfbb418f46eb36 RX_NEG State 0, no of bits 10
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 168726000: reporter [SPI_DRV_RUN:] Starting transmission: 60e86a3c102e8c299ea2ff064fe286d8 RX_NEG State 1, no of bits 10
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 169048100: reporter [SPI_DRV_RUN:] Starting transmission: 928edc51b1f6b297f0bbb4da8374003a RX_NEG State 0, no of bits 17
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 169450100: reporter [SPI_DRV_RUN:] Starting transmission: b54c549c9f610b26320e6f0c7d97545a RX_NEG State 0, no of bits 12
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 172962100: reporter [SPI_DRV_RUN:] Starting transmission: 2e474002c9839ced2f32f81acf942797 RX_NEG State 0, no of bits 15
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 173398000: reporter [SPI_DRV_RUN:] Starting transmission: b1578decd504234f840e8c243dfe4c0 RX_NEG State 0, no of bits 20
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 176370100: reporter [SPI_DRV_RUN:] Starting transmission: 550ff6e2f904ef46e2cdba957fe827d5 RX_NEG State 0, no of bits 22
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 177082100: reporter [SPI_DRV_RUN:] Starting transmission: 3d0e4be1fab98c55acc2241a5d0caab7 RX_NEG State 1, no of bits 11
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 178112100: reporter [SPI_DRV_RUN:] Starting transmission: d75d9232ee26929756e86924d7e27799 RX_NEG State 1, no of bits 13
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 179278100: reporter [SPI_DRV_RUN:] Starting transmission: 801c52df99cc17b974dbc83f1952fdf0 RX_NEG State 0, no of bits 10
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 180242000: reporter [SPI_DRV_RUN:] Starting transmission: 13ae4893eb9caa6c60c59c2bc589bdcf RX_NEG State 1, no of bits 30
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 188452000: reporter [SPI_DRV_RUN:] Starting transmission: 33f47dc2853fc057e5a9ef82fab340b9 RX_NEG State 1, no of bits 17
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 189350000: reporter [SPI_DRV_RUN:] Starting transmission: 60d6c27d56149a3cb43116d8913e2aa8 RX_NEG State 0, no of bits 9
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 189706100: reporter [SPI_DRV_RUN:] Starting transmission: 514665a17666047b88ba92494c9aed9b RX_NEG State 1, no of bits 26
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 190486000: reporter [SPI_DRV_RUN:] Starting transmission: 3c0f759005444aa04ec59b1256796a2f RX_NEG State 1, no of bits 19
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 200816000: reporter [SPI_DRV_RUN:] Starting transmission: 46e0f07e33829a3b1d2e2f21b253fc21 RX_NEG State 0, no of bits 17
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 202274000: reporter [SPI_DRV_RUN:] Starting transmission: 5cb684f61262f254f3b3d91759c1850b RX_NEG State 1, no of bits 22
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 203364100: reporter [SPI_DRV_RUN:] Starting transmission: d647e25bd63ca052e6ecb782ada32f51 RX_NEG State 0, no of bits 29
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 203848100: reporter [SPI_DRV_RUN:] Starting transmission: 6cbfa90fca0be8dfc8755495f85be6ef RX_NEG State 1, no of bits 17
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 204250100: reporter [SPI_DRV_RUN:] Starting transmission: 3bb24478ff7b96a951bba2b884b7041d RX_NEG State 0, no of bits 23
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 207614100: reporter [SPI_DRV_RUN:] Starting transmission: 9159e6e9bb84cc866ebcc15967875715 RX_NEG State 1, no of bits 28
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 208104000: reporter [SPI_DRV_RUN:] Starting transmission: 55ba97a25bcb8f8c46028898688e9623 RX_NEG State 0, no of bits 25
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 209302100: reporter [SPI_DRV_RUN:] Starting transmission: 20c8d67c70b448c280df8c7d671b0a06 RX_NEG State 0, no of bits 14
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 209726000: reporter [SPI_DRV_RUN:] Starting transmission: edf25d97fee0da87a59e8fb489102529 RX_NEG State 0, no of bits 7
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 210066100: reporter [SPI_DRV_RUN:] Starting transmission: 217c6927dd7fe3f8b1ca38c411ccde03 RX_NEG State 1, no of bits 4
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 210490100: reporter [SPI_DRV_RUN:] Starting transmission: a42d71b3b9d7cf8520ce18341aa9b71f RX_NEG State 0, no of bits 22
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 216588100: reporter [SPI_DRV_RUN:] Starting transmission: a7684a4561016e4dcd9fcbb7610368b9 RX_NEG State 0, no of bits 2
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 217488000: reporter [SPI_DRV_RUN:] Starting transmission: 114c7c13a9c55c28c21188349e11eeca RX_NEG State 1, no of bits 28
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 219680000: reporter [SPI_DRV_RUN:] Starting transmission: e724d12f67ab40a527d3e8e5370286dd RX_NEG State 1, no of bits 22
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 231570100: reporter [SPI_DRV_RUN:] Starting transmission: 8ab4f2ee0a3985537ce3c87ea548cf26 RX_NEG State 0, no of bits 20
+# UVM_INFO ../../../agents/spi_agent/spi_driver_bfm.sv(55) @ 232242100: reporter [SPI_DRV_RUN:] Starting transmission: 97a928e7cc89254639453ffd719d53df RX_NEG State 1, no of bits 14
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 239876000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../../../block_level_tbs/gpio_tb/env/gpio_in_scoreboard.svh(373) @ 239876000: uvm_test_top.m_env.m_gpio_env.m_in_sb [GPIO_IN_SB] Test Passed - No GPI or interrupt read errors
+# UVM_INFO ../../../block_level_tbs/gpio_tb/env/gpio_out_scoreboard.svh(391) @ 239876000: uvm_test_top.m_env.m_gpio_env.m_out_sb [GPIO_OUTPUT_SB] Test passed: no errors detected
+# UVM_INFO ../../../block_level_tbs/gpio_tb/env/gpio_out_scoreboard.svh(392) @ 239876000: uvm_test_top.m_env.m_gpio_env.m_out_sb [GPIO_OUTPUT_SB] 0 GPOE changes detected 0 GPO changes detected
+# UVM_INFO ../../../block_level_tbs/gpio_tb/env/gpio_env.svh(141) @ 239876000: uvm_test_top.m_env.m_gpio_env [** UVM TEST PASSED **] No scoreboard errors reported
+# UVM_INFO ../../../block_level_tbs/spi_tb/env/spi_scoreboard.svh(252) @ 239876000: uvm_test_top.m_env.m_spi_env.m_scoreboard [SPI_SB_REPORT:] Test Passed - 100 transfers occured with no errors
+# UVM_INFO ../../../block_level_tbs/spi_tb/env/spi_scoreboard.svh(253) @ 239876000: uvm_test_top.m_env.m_spi_env.m_scoreboard [** UVM TEST PASSED **] Test Passed - 100 transfers occured with no errors
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  110
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [** UVM TEST PASSED **]     2
+# [GPIO_IN_SB]     1
+# [GPIO_OUTPUT_SB]     2
+# [Questa UVM]     2
+# [RNTST]     1
+# [SPI_DRV_RUN:]   100
+# [SPI_SB_REPORT:]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 2398760 ns  Iteration: 71  Instance: /hvl_top
+# End time: 14:41:27 on Jan 16,2021, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 4, Suppressed Errors: 72

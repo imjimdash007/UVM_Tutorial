@@ -1,0 +1,4 @@
+vlog -work work -O0 +fcover +acc .\cover.sv 
+vsim -cvgperinstance -c  work.test -do " coverage save -onexit merged.ucdb; run -all;exit"
+vcover report -details .\merged.ucdb
+vcover report -details -html .\merged.ucdb

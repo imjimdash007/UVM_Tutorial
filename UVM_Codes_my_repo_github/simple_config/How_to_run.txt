@@ -1,0 +1,5 @@
+vlog -work work -vopt -sv -stats=none config_simple.sv +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+
+vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi +UVM_CONFIG_DB_TRACE
+
+run -a

@@ -1,0 +1,5 @@
+qverilog '-timescale' '1ns/1ns' design.sv testbench.sv -R +UVM_TESTNAME=my_test
+vsim -c +UVM_TESTNAME=my_test work.top //if the above command doesn't work 
+vcd2wlf dump.vcd dump.wlf
+To open that, you need to go to the wave view and click on File -> Open dataset and browse to your project's .wlf file
+add wave -r *

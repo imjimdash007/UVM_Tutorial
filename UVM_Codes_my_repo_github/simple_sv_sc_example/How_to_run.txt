@@ -1,0 +1,16 @@
+------- How to run systemverilog codes ---- 
+
+vlog -work work -vopt -sv hello.sv +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi
+run -a
+
+
+
+------- How to run systemC codes ---- 
+
+### Note you have to use CMD terminal to run for gracefull exit
+vlib work
+sccom -g hello.cc
+sccom -link
+vsim -voptargs=+acc work.sc_main -c
+quit -f

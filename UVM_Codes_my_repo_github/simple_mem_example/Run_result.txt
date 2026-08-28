@@ -1,0 +1,118 @@
+# vsim -c -novopt "+define+UVM_NO_RELNOTES" work.tbench_top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi 
+# Start time: 12:16:40 on Jan 15,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_mem_example/work.tbench_top
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_mem_example/work.memory_sv_unit
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_mem_example/work.uvm_pkg
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.memory_sv_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tbench_top
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_mem_example/work.mem_if
+# Loading work.mem_if
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_mem_example/work.memory
+# Loading work.memory
+# ** Warning: (vsim-8637) memory.sv(381): A modport ('MONITOR') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /memory_sv_unit File: memory.sv
+# ** Warning: (vsim-8637) memory.sv(315): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /memory_sv_unit::mem_driver File: memory.sv
+# ** Warning: (vsim-8637) memory.sv(316): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /memory_sv_unit::mem_driver File: memory.sv
+# ** Warning: (vsim-8637) memory.sv(317): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /memory_sv_unit::mem_driver File: memory.sv
+# ** Warning: (vsim-8637) memory.sv(319): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /memory_sv_unit::mem_driver File: memory.sv
+# ** Warning: (vsim-8637) memory.sv(323): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /memory_sv_unit::mem_driver File: memory.sv
+# ** Warning: (vsim-8637) memory.sv(331): A modport ('DRIVER') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /memory_sv_unit::mem_driver File: memory.sv
+# Loading C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_wr_rd_test...
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 mem_wr_rd_test          -     @448 
+#   env                        mem_model_env           -     @456 
+#     mem_agnt                 mem_agent               -     @468 
+#       driver                 mem_driver              -     @506 
+#         rsp_port             uvm_analysis_port       -     @523 
+#         seq_item_port        uvm_seq_item_pull_port  -     @514 
+#       monitor                mem_monitor             -     @485 
+#         item_collected_port  uvm_analysis_port       -     @497 
+#       sequencer              mem_sequencer           -     @532 
+#         rsp_export           uvm_analysis_export     -     @540 
+#         seq_item_export      uvm_seq_item_pull_imp   -     @646 
+#         arbitration_queue    array                   0     -    
+#         lock_queue           array                   0     -    
+#         num_last_reqs        integral                32    'd1  
+#         num_last_rsps        integral                32    'd1  
+#     mem_scb                  mem_scoreboard          -     @476 
+#       item_collected_export  uvm_analysis_imp        -     @662 
+# ----------------------------------------------------------------
+# UVM_INFO memory.sv(500) @ 25: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: WRITE DATA       :: ------
+# UVM_INFO memory.sv(501) @ 25: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 2
+# UVM_INFO memory.sv(502) @ 25: uvm_test_top.env.mem_scb [mem_scoreboard] Data: 40
+# UVM_INFO memory.sv(503) @ 25: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO memory.sv(507) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO memory.sv(508) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 2
+# UVM_INFO memory.sv(509) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: 40 Actual Data: 40
+# UVM_INFO memory.sv(510) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 95: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO memory.sv(608) @ 95: uvm_test_top [mem_wr_rd_test] ---------------------------------------
+# UVM_INFO memory.sv(609) @ 95: uvm_test_top [mem_wr_rd_test] ----           TEST PASS           ----
+# UVM_INFO memory.sv(610) @ 95: uvm_test_top [mem_wr_rd_test] ---------------------------------------
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [mem_scoreboard]     8
+# [mem_wr_rd_test]     3
+# ** Note: $finish    : C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 95 ns  Iteration: 53  Instance: /tbench_top
+# End time: 12:17:16 on Jan 15,2021, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 8

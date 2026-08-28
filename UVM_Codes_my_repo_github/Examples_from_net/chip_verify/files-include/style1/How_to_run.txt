@@ -1,0 +1,5 @@
+vlog -work work -vopt -sv tb_top.sv +incdir+. +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll -suppress vlog-2745
+
+vsim -c work.tb_top -suppress vlog-2745
+
+run -a

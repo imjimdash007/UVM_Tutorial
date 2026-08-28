@@ -1,0 +1,5 @@
+PUSH_E
+PUSH_F
+SUB
+POP_D
+PUSH_F

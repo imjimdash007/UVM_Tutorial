@@ -1,0 +1,4 @@
+var g_data = {'dummy':{null},
+'/test/MyClass':{h:'4',g:1,z:1},
+'work.test':{h:'2',z:1},
+'/test':{h:'3',z:1}};

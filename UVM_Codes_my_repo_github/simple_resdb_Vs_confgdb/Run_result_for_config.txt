@@ -1,0 +1,75 @@
+# vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi 
+# Start time: 14:01:23 on Jan 15,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_resdb_Vs_confgdb/work.top
+# Refreshing E:/Program_Practise/UVM/UVM_Codes/simple_resdb_Vs_confgdb/work.config_vs_resource_sv_unit
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.config_vs_resource_sv_unit
+# Loading work.top
+# Loading mtiUvm.questa_uvm_pkg
+# ** Warning: (vsim-3764) config_vs_resource.sv(66): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /config_vs_resource_sv_unit File: config_vs_resource.sv
+# ** Warning: (vsim-3764) config_vs_resource.sv(85): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /config_vs_resource_sv_unit File: config_vs_resource.sv
+# Loading C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO config_vs_resource.sv(58) @ 0: uvm_test_top [CONFIG] Set cnt=4 using uvm_config_db in build phase
+# UVM_INFO config_vs_resource.sv(30) @ 0: uvm_test_top.m_env [CONFIG] Set cnt=1 using uvm_config_db in build
+# UVM_INFO config_vs_resource.sv(67) @ 0: uvm_test_top [PRINT] Got cnt=1 using uvm_config_db in start_of_simulation phase
+# UVM_INFO config_vs_resource.sv(76) @ 0: uvm_test_top [CONFIG] Set cnt=123 using uvm_config_db in start_of_simulation phase
+# UVM_INFO config_vs_resource.sv(86) @ 0: uvm_test_top [PRINT] Got cnt=123 using config_db in main phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    8
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [CONFIG]     3
+# [PRINT]     2
+# [Questa UVM]     2
+# [RNTST]     1
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /top
+# End time: 14:01:30 on Jan 15,2021, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 3

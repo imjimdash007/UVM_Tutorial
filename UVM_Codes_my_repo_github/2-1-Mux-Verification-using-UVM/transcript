@@ -1,0 +1,1594 @@
+# vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib D:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi "+UVM_TESTNAME=mux_testa" 
+# Start time: 16:24:47 on May 14,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Refreshing C:/Users/Computer/Desktop/for_git_push/UVM_Codes/2-1-Mux-Verification-using-UVM/work.top
+# Refreshing C:/Users/Computer/Desktop/for_git_push/UVM_Codes/2-1-Mux-Verification-using-UVM/work.top_sv_unit
+# Refreshing C:/Users/Computer/Desktop/for_git_push/UVM_Codes/2-1-Mux-Verification-using-UVM/work.uvm_pkg
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top
+# Refreshing C:/Users/Computer/Desktop/for_git_push/UVM_Codes/2-1-Mux-Verification-using-UVM/work.mux_intf
+# Loading work.mux_intf
+# Refreshing C:/Users/Computer/Desktop/for_git_push/UVM_Codes/2-1-Mux-Verification-using-UVM/work.mux
+# Loading work.mux
+# Loading D:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mux_testa...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mux_testa               -     @448 
+#   env                      mux_env                 -     @456 
+#     agent                  mux_agent               -     @464 
+#       driver               mux_driver              -     @489 
+#         rsp_port           uvm_analysis_port       -     @506 
+#         seq_item_port      uvm_seq_item_pull_port  -     @497 
+#       mon                  mux_monitor             -     @638 
+#         ap_mon             uvm_analysis_port       -     @648 
+#       sqr                  mux_sequencer           -     @515 
+#         rsp_export         uvm_analysis_export     -     @523 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @629 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    mux_coverage            -     @472 
+#       analysis_imp         uvm_analysis_imp        -     @480 
+# --------------------------------------------------------------
+# 
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 0 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h0                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 0 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h0                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 0
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h0                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# Inside the seq loop --> a= 1 b = 1 select = 1
+# ------------------------------------------------------------------------------
+# Name                           Type      Size  Value                          
+# ------------------------------------------------------------------------------
+# mux_tx                         mux_tx    -     @673                           
+#   a                            integral  1     'h1                            
+#   b                            integral  1     'h1                            
+#   select                       integral  1     'h1                            
+#   begin_time                   time      64    0                              
+#   end_time                     time      64    0                              
+#   depth                        int       32    'd2                            
+#   parent sequence (name)       string    4     seqa                           
+#   parent sequence (full name)  string    31    uvm_test_top.env.agent.sqr.seqa
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr     
+# ------------------------------------------------------------------------------
+# UVM_INFO D:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO mux_coverage.sv(57) @ 0: uvm_test_top.env.cov [mux_coverage] Coverage is: 50.000000
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [mux_coverage]     1
+# ** Note: $finish    : D:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 563  Instance: /top
+# End time: 16:24:55 on May 14,2022, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 1

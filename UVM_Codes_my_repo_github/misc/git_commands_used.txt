@@ -1,0 +1,313 @@
+    1  ls -al 
+    2  cler
+    3  clear
+    4  pwd
+    5  which vsim 
+    6  exit
+    7  which make 
+    8  make --verison 
+    9  make -version 
+   10  exit
+   11  git clone https://github.com/adash0123456789/abc.git
+   12  cd abc/
+   13  git branch -M main
+   14  git b
+   15  git branch
+   16  git remote add origin https://github.com/adash0123456789/abc.git
+   17  git push -u origin main
+   18  git push -u origin main
+   19  git remote add origin https://github.com/adash0123456789/abc.git
+   20  git push -u origin main
+   21  ls
+   22  git add check_gpu.py
+   23  git push -u origin main
+   24  git status
+   25  git commiot
+   26  git commit
+   27  git config --global user.email "adash0123456789@gmail.com"
+   28  git config --global user.name "Mjabs"
+   29  git status
+   30  git commit
+   31  git commit
+   32  git push -u origin main
+   33  which python 
+   34  python 
+   35  python 
+   36  ls
+   37  rm -rf qverilog.log 
+   38  cls
+   39  clear
+   40  ls
+   41  qverilog simple.sv 
+   42  clear
+   43  ls
+   44  cd ..
+   45  clear
+   46  ls
+   47  git remote add origin https://github.com/adash0123456789/UVM_Codes.git
+   48  git init
+   49  git remote add origin https://github.com/adash0123456789/UVM_Codes.git
+   50  git branch -M main
+   51  ls
+   52  git commit -m "first commit"
+   53  git add
+   54  git add .
+   55  git remote add origin https://github.com/adash0123456789/UVM_Codes.git
+   56  git push -u origin main
+   57  ls
+   58  git status
+   59  git commit -m "first commit" simple_component/qverilog.log
+   60  git commit -m "first commit" simple_component/simple.sv
+   61  git status
+   62  git push -u origin main
+   63  exit
+   64  git status
+   65  git remote add origin https://github.com/adash0123456789/UVM_Codes.git
+   66  git push -u origin main
+   67  git branch
+   68  git clone https://github.com/adash0123456789/UVM_Codes.git
+   69  ls
+   70  mv simple_component UVM_Codes/.
+   71  ls
+   72  cd UVM_Codes/
+   73  git status
+   74  git add simple_component/*
+   75  git status
+   76  git commit -m 'Initial Commit' simple_component/*
+   77  git push -u origin master
+   78  history
+   79  exit
+   80  git clone https://github.com/adash0123456789/c-.git
+   81  git status 
+   82  cd c-
+   83  git status
+   84  git add *
+   85  git status
+   86  git commit -m "Initial checkins" *
+   87  git status
+   88  git  push -u origin master
+   89  git status
+   90  clear
+   91  exit
+   92  git status
+   93  qverilog parallel_TB_no_force.sv 
+   94  git status 
+   95  qverilog TB_force.sv 
+   96  git status
+   97  git add TB_with_force/*
+   98  git status
+   99  git commit -m "Initial checkins" TB_with_force/*
+  100  git push -u origin master
+  101  clear
+  102  git status
+  103  ls
+  104  cp -rf TB_with_force TB_
+  105  ls
+  106  mv TB_ TB_||
+  107  ls
+  108  mv TB_ TB_parallel_exp
+  109  ls
+  110  cd TB_parallel_exp/
+  111  clear
+  112  emacs &
+  113  ls
+  114  ls
+  115  rm qverilog.log 
+  116  ls
+  117  clear
+  118  ls
+  119  qverilog TB_force.sv TB_parallel.sv 
+  120  ls
+  121  rm -rf work/ qverilog.log 
+  122  ls -al 
+  123  qverilog TB_force.sv TB_parallel.sv 
+  124  cls
+  125  clr
+  126  clear
+  127  qverilog TB_force.sv TB_parallel.sv 
+  128  qverilog TB_force.sv TB_parallel.sv 
+  129  ls
+  130  rm -rf work/ qverilog.log 
+  131  clear
+  132  qverilog TB_force.sv TB_parallel.sv 
+  133  rm -rf work/ qverilog.log 
+  134  qverilog TB_force.sv TB_parallel.sv 
+  135  rm -rf work/ qverilog.log 
+  136  clear
+  137  qverilog TB_force.sv TB_parallel.sv 
+  138  clear
+  139  rm -rf work/ qverilog.log 
+  140  ls
+  141  qverilog TB_force.sv TB_parallel.sv 
+  142  rm -rf work/ qverilog.log 
+  143  qverilog TB_force.sv TB_parallel.sv 
+  144  clear
+  145  qverilog TB_verilog.sv  TB_parallel.sv 
+  146  ls
+  147  cd ..
+  148  clear
+  149  ls
+  150  git add TB_parallel_exp/*
+  151  git commit -m "Initial Checkins" TB_parallel_exp/*
+  152  history
+  153  git push -u origin master
+  154  cler
+  155  cler
+  156  clear
+  157  ls
+  158  cd TB_parallel_exp/
+  159  ls
+  160  questasim 
+  161  ls
+  162  rm -rf abc.* work/ vsim.wlf 
+  163  ls
+  164  rm -rf transcript 
+  165  ls
+  166  clear
+  167  cd ..
+  168  ls
+  169  cd TB_parallel_exp2
+  170  ls
+  171  qverilog TB_verilog.sv TB_parallel.sv 
+  172  qverilog TB_verilog.sv TB_parallel.sv 
+  173  ls
+  174  rm -rf work/ qverilog.log 
+  175  ls
+  176  clear
+  177  ls
+  178  qverilog TB_verilog.sv TB_parallel.sv 
+  179  ls
+  180  rm -rf qverilog.log work/
+  181  clear
+  182  qverilog TB_verilog.sv TB_parallel.sv 
+  183  clear
+  184  qverilog TB_verilog.sv TB_parallel.sv 
+  185  history
+  186  qverilog TB_verilog.sv TB_parallel.sv 
+  187  qverilog TB_verilog.sv TB_parallel.sv 
+  188  qverilog TB_verilog.sv TB_parallel.sv 
+  189  qverilog TB_verilog.sv TB_parallel.sv 
+  190  clear
+  191  ls
+  192  rm -rf qverilog.log work/
+  193  clear
+  194  qverilog TB_verilog.sv TB_parallel.sv 
+  195  clear
+  196  ls
+  197  rm -rf work/ qverilog.log 
+  198  clear
+  199  qverilog TB_verilog.sv TB_parallel.sv 
+  200  rm -rf work/ qverilog.log 
+  201  qverilog TB_verilog.sv TB_parallel.sv 
+  202  clear
+  203  rm -rf work/ qverilog.log 
+  204  qverilog TB_verilog.sv TB_parallel.sv 
+  205  clear
+  206  ls
+  207  cd ..
+  208  ls
+  209  git add TB_parallel_exp2
+  210  git status
+  211  git commit -m "Initial checkout" TB_parallel_exp2
+  212  git status
+  213  history
+  214  git push -u origin master
+  215  ls
+  216  git pull https://github.com/nelsoncsc/easyUVM.git
+  217  ls
+  218  git clone https://github.com/nelsoncsc/easyUVM.git
+  219  ls
+  220  cd easyUVM/
+  221  ls
+  222  cat Makefile 
+  223  cat external.cpp 
+  224  qverilog external.cpp top.sv
+  225  cat Makefile 
+  226  g++ --version 
+  227  g++ -c external.cpp -o external.o
+  228  qverilog -sv top.sv external.o
+  229  vsim 
+  230  questasim 
+  231  ls
+  232  rm -rf transcript work/afsf.*
+  233  ls
+  234  rm -rf work/ afsf.*
+  235  ls
+  236  exit
+  237  qverilog -sv callback_example.sv 
+  238  cd ..
+  239  git add simple_callback/
+  240  git status
+  241  git commit -m "Initial checkins" simple_callback/*
+  242  git push -u origin master
+  243  ls
+  244  cd easyUVM_questa/
+  245  clear
+  246  questasim
+  247  pwd
+  248  git status
+  249  cd ..
+  250  git status
+  251  cd config_simple/
+  252  ls
+  253  cat How_to_run.txt 
+  254  vlog -work work -vopt -sv -stats=none config_simple.sv +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim64_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+  255  vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim64_10.4e/uvm-1.1d/win64/uvm_dpi +UVM_CONFIG_DB_TRACE
+  256  vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim64_10.6c/uvm-1.1d/win32/uvm_dpi +UVM_CONFIG_DB_TRACE
+  257  clear
+  258  ls
+  259  rm -rf transcript work/
+  260  ls
+  261  vlog -work work -vopt -sv -stats=none config_simple.sv +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+  262  vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi +UVM_CONFIG_DB_TRACE
+  263  ls
+  264  cat Run_result.txt 
+  265  cd ..
+  266  git status
+  267  git add config_simple/*
+  268  git commit -m "Initial checkins" config_simple/*
+  269  git push -u origin master
+  270  cat How_to_run_.txt 
+  271  vlog -work work -vopt -sv -stats=none memory.sv +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll
+  272  vsim -c -novopt "+define+UVM_NO_RELNOTES" work.tbench_top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi
+  273  ls
+  274  cd ..
+  275  clear
+  276  ls
+  277  git statuas
+  278  git status
+  279  git add simple_mem_example/*
+  280  git commit -m "Initial Checkins" simple_mem_example/*
+  281  git push -u origin master
+  282  ls
+  283  questaqsim 
+  284  questasim
+  285  sccom -work work -stats=none hello.cc 
+  286  sccom -link -work work
+  287  vsim -voptargs=+acc work.sc_main
+  288  vlib work
+  289  sccom -g hello.cc
+  290  sccom -link
+  291  vsim sc_main
+  292  vlib work
+  293  sccom -g hello.cc
+  294  sccom -g hello.cc
+  295  git status
+  296  git add simple_add_sub_env/*
+  297  git add vlog_options.txt vsim_options.txt 
+  298  git commit -m "Initial Checkin" vlog_options.txt vsim_options.txt simple_add_sub_env/*
+  299  git push -u origin master
+  300  ld
+  301  ls
+  302  git mv config_simple simple_config    ---> renaming the directory
+  303  git status        
+  304  git add simple_config/*               ----> add the renamed directory
+  305  git commit -m "Initial checkin" simple_config/*  --> commit the renamed 
+  306  git push -u origin master                        
+  307  ls
+  308  git checkout master
+  309  git rm -r config_simple               ----> remove the previous directory 
+  310  git status               
+  311  git commit -m "Remove duplicated directory" --> commit with the update 
+  312  git push origin master
+  313  history | tee log

@@ -1,0 +1,41 @@
+# vsim -c -novopt work.sc_main 
+# Start time: 04:31:44 on Apr 24,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading C:/Users/Computer/Desktop/for_git_push/UVM_Codes/SystemC_simple_example/simple_wr_rd/work\_sc\win32_gcc-4.2.1\systemc.so
+# Loading C:/Users/Computer/Desktop/for_git_push/UVM_Codes/SystemC_simple_example/simple_wr_rd/work.sc_main
+# ** Warning: (vsim-6667) The declared name and constructor argument for instance 'sc_main.reader' are different. To enable debug support of simulation objects created by sc_main() the declared name and the constructor argument have to be the same.
+# ** Warning: (vsim-6667) The declared name and constructor argument for instance 'sc_main.writer' are different. To enable debug support of simulation objects created by sc_main() the declared name and the constructor argument have to be the same.
+# ** Warning: (vsim-4025) The port '/sc_main/reader/port_0' is of an undebuggable type.
+# ** Warning: (vsim-4025) The port '/sc_main/writer/port_0' is of an undebuggable type.
+run -a
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+
+# Break key hit  <cntrl+D, cntrl+z >
+# Simulation stop requested.
+quit -f
+# End time: 04:32:50 on Apr 24,2022, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 5

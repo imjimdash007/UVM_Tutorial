@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 30 07:37:16 2022
+# Process ID: 12984
+# Current directory: E:/Programming/Vivado/uvm/Adder_4_bit/UVM_test/UVM_test.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14244 E:\Programming\Vivado\uvm\Adder_4_bit\UVM_test\UVM_test.sim\sim_1\behav\xsim\adder_4_bit_tb_top_behav.wdb
+# Log file: E:/Programming/Vivado/uvm/Adder_4_bit/UVM_test/UVM_test.sim/sim_1/behav/xsim/vivado.log
+# Journal file: E:/Programming/Vivado/uvm/Adder_4_bit/UVM_test/UVM_test.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {E:\Programming\Vivado\uvm\Adder_4_bit\UVM_test\UVM_test.sim\sim_1\behav\xsim\adder_4_bit_tb_top_behav.wdb}
+add_wave {{/adder_4_bit_tb_top/adder_4_bit_intf/clk}} {{/adder_4_bit_tb_top/adder_4_bit_intf/reset}} {{/adder_4_bit_tb_top/adder_4_bit_intf/x}} {{/adder_4_bit_tb_top/adder_4_bit_intf/y}} {{/adder_4_bit_tb_top/adder_4_bit_intf/cin}} {{/adder_4_bit_tb_top/adder_4_bit_intf/sum}} {{/adder_4_bit_tb_top/adder_4_bit_intf/cout}} 
+current_wave_config {Untitled 1}
+add_wave {{/adder_4_bit_tb_top}} 
+current_wave_config {Untitled 1}
+add_wave {{/adder_4_bit_tb_top/dut_inst}} 
+current_wave_config {Untitled 1}
+add_wave {{/adder_4_bit_tb_top/dut_inst/x}} 
+close_sim

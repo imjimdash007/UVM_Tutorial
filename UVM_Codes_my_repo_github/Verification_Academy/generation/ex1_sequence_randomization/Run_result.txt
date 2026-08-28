@@ -1,0 +1,86 @@
+# Reading C:/questasim_10.6c/tcl/vsim/pref.tcl
+# //  Questa Sim
+# //  Version 10.6c win32 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -gui -vopt work.top_tb -sv_seed 10 "+UVM_TESTNAME=seq_rand_test" 
+# Start time: 12:16:29 on Jan 16,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.bus_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.bus_agent_pkg(fast)
+# Loading work.bus_seq_lib_pkg(fast)
+# Loading work.test_lib_pkg(fast)
+# Loading work.top_tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim_10.6c/uvm-1.1d\win32\uvm_dpi.dll
+add wave -position insertpoint  \
+sim:/top_tb/BUS/clk \
+sim:/top_tb/BUS/resetn \
+sim:/top_tb/BUS/addr \
+sim:/top_tb/BUS/write_data \
+sim:/top_tb/BUS/rnw \
+sim:/top_tb/BUS/valid \
+sim:/top_tb/BUS/ready \
+sim:/top_tb/BUS/read_data \
+sim:/top_tb/BUS/error
+run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test seq_rand_test...
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(106) @ 0: uvm_test_top.m_agent.m_sequencer@@seq [run:] Transfer block of 128 words from 1000800-10009fc to 1021c34-1021e30
+# UVM_INFO ../sequence_library/bus_seq_lib_pkg.sv(141) @ 47110: uvm_test_top.m_agent.m_sequencer@@seq [run:] Finished transfer end addresses SRC: 10009fc DST:1021e30
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 47110: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tests/test_lib_pkg.sv(79) @ 47110: uvm_test_top [** UVM TEST PASSED **] Number of errors: 0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    7
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [** UVM TEST PASSED **]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [run:]     2
+# ** Note: $finish    : C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 47110 ns  Iteration: 61  Instance: /top_tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim_10.6c/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+quit -f
+# End time: 12:17:20 on Jan 16,2021, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0

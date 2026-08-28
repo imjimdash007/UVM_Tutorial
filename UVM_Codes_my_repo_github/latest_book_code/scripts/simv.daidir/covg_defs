@@ -1,0 +1,149 @@
+global coverage_group 0 pipe_pkg::pipe_coverage::cg __coverage_pipe_coverage.cg unused_pipe_coverage_cg_loop_label pipe_pkg 0 0 ( )
+ 1 1
+ 80 /home/pmarriott/Projects/uvm-ramp/DVCon/163-HI374/scripts/../sv/pipe_coverage.sv
+ 12 0 -1 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_6
+0
+0
+0
+64
+0
+ 0
+
+7
+0
+0
+ 6 cov_cf 14 0 0 0 70 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn 70 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 -1 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 6 cov_en 15 0 0 0 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_0 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 -1 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 cov_ino 16 0 0 0 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_1 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 -1 2 16 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 cov_in1 17 0 0 0 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_2 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 -1 2 16 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 8 cov_out0 18 0 0 0 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_3 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 -1 2 16 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 8 cov_out1 19 0 0 0 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_4 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 -1 2 16 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 cov_del 20 0 0 0 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_5 72 pipe_pkg_pipe_coverage_1::vcs_paramclassrepository_pipe_coverage_cg_fn_5 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 -1 1 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

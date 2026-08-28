@@ -1,0 +1,33 @@
+
+## with config_db
+
+
+vlog -work work -vopt -sv config_vs_resource.sv +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win64/uvm_dpi.dll
+
+vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi
+
+run -a
+
+log snippet  ==> last one wins
+
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(58) @ 0: uvm_test_top [CONFIG] Set cnt=4 using uvm_config_db in build phase
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(30) @ 0: uvm_test_top.m_env [CONFIG] Set cnt=1 using uvm_config_db in build
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(67) @ 0: uvm_test_top [PRINT] Got cnt=1 using uvm_config_db in start_of_simulation phase
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(76) @ 0: uvm_test_top [CONFIG] Set cnt=123 using uvm_config_db in start_of_simulation phase
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(86) @ 0: uvm_test_top [PRINT] Got cnt=123 using config_db in main phase
+
+
+
+## with resource_db
+
+vlog -work work -vopt -sv config_vs_resource.sv +incdir+C:/questasim_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src +incdir+C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi.dll +define+RESOURCE
+
+vsim -c -novopt "+define+UVM_NO_RELNOTES" work.top -sv_lib C:/questasim_10.6c/uvm-1.1d/win32/uvm_dpi +define+RESOURCE
+
+run -a
+
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(27) @ 0: uvm_test_top.m_env [RESOURCE] Set cnt=1 using uvm_resource_db in build
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(67) @ 0: uvm_test_top [PRINT] Got cnt=4 using uvm_config_db in start_of_simulation phase
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(73) @ 0: uvm_test_top [RESOURCE] Set cnt=123 using uvm_resource_db in start_of_simulation phase
+# UVM_INFO E:/Coding_Programs/UVM/example6/config_vs_resource.sv(86) @ 0: uvm_test_top [PRINT] Got cnt=4 using config_db in main phase
+

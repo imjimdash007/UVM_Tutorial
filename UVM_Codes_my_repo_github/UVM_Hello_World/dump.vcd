@@ -1,0 +1,19 @@
+$date
+	Sat Apr 09 08:43:32 2022
+$end
+$version
+	QuestaSim Version 10.6c
+$end
+$timescale
+	1ns
+$end
+
+$scope module top $end
+
+$scope module dut1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end
