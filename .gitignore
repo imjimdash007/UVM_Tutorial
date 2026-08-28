@@ -1,0 +1,5 @@
+# Visual Studio cache and temporary folders
+.vs/
+*.ipch
+*.vscache
+
