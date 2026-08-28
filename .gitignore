@@ -2,4 +2,21 @@
 .vs/
 *.ipch
 *.vscache
+# IDE and compiler artifacts
+.vs/
+*.ipch
+*.db
+*.pdb
+*.exe
+*.a
+xsim.dir
+# Vivado and simulation artifacts
+*.wdb
+*.dbg
+*.mem
+*.svtype
+*.ilk
+*.obj
+xsim.dir/
+covhtmlreport/
 
