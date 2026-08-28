@@ -1,3 +1,4 @@
-sccom -work work -stats=none hello_World.cpp
-sccom -link -work work
-vsim -c -novopt work.sc_main
+sccom -64 -work work -stats=none -suppress 94 hello_World.cpp
+sccom -64 -suppress 94 -link
+vsim -c work.sc_main -do "run -a; quit -f"
+
