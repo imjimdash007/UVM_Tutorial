@@ -1,6 +1,6 @@
 # vsim -c work.sc_main -do "run -a; quit -f" 
-# Start time: 16:09:12 on Aug 28,2026
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 07:09:49 on Aug 29,2026
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim-64
 # //  Version 2021.2_1 linux_x86_64 May 15 2021
 # //
@@ -22,5 +22,5 @@
 # ** Warning: (vsim-6667) The declared name and constructor argument for instance 'sc_main.HELLO' are different. To enable debug support of simulation objects created by sc_main() the declared name and the constructor argument have to be the same.
 # run -a
 #  quit -f
-# End time: 16:09:13 on Aug 28,2026, Elapsed time: 0:00:01
+# End time: 07:09:50 on Aug 29,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1

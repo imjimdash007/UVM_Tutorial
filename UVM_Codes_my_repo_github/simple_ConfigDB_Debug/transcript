@@ -1,5 +1,5 @@
-# vsim -c "+define+UVM_NO_RELNOTES" work.top -do "run -a;quit -f" 
-# Start time: 19:13:11 on Aug 28,2026
+# vsim -c tb_top -do "run -all; quit" 
+# Start time: 14:57:41 on Sep 01,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim-64
 # //  Version 2021.2_1 linux_x86_64 May 15 2021
@@ -17,11 +17,12 @@
 # //
 # Loading sv_std.std
 # Loading mtiUvm.uvm_pkg(fast)
-# Loading work.Hello_World_sv_unit(fast)
+# Loading work.tb_top_sv_unit(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
-# Loading work.top(fast)
+# Loading work.tb_top(fast)
+# Loading work.my_if(fast)
 # Loading /home/aj/Questasim/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
-# run -a
+# run -all
 # ----------------------------------------------------------------
 # UVM-1.1d
 # (C) 2007-2013 Mentor Graphics Corporation
@@ -44,31 +45,23 @@
 # 
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
-# UVM_INFO @ 0: reporter [RNTST] Running test ...
-# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
-# -----------------------
-# Name  Type  Size  Value
-# -----------------------
-# c     test  -     @466 
-# -----------------------
-# 
-# UVM_INFO Hello_World.sv(20) @ 10: c [TEST] Hello World!
+# UVM_INFO @ 0: reporter [RNTST] Running test my_test...
+# UVM_INFO tb_top.sv(39) @ 0: uvm_test_top.drv [DRV] Attempting to drive virtual interface...
 # UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :    6
+# UVM_INFO :    5
 # UVM_WARNING :    0
 # UVM_ERROR :    0
 # UVM_FATAL :    0
 # ** Report counts by id
+# [DRV]     1
 # [Questa UVM]     2
 # [RNTST]     1
-# [TEST]     1
 # [TEST_DONE]     1
-# [UVMTOP]     1
 # ** Note: $finish    : /home/aj/Questasim/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 10 ns  Iteration: 54  Instance: /top
-# End time: 19:13:13 on Aug 28,2026, Elapsed time: 0:00:02
+#    Time: 10 ns  Iteration: 55  Instance: /tb_top
+# End time: 14:57:43 on Sep 01,2026, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
