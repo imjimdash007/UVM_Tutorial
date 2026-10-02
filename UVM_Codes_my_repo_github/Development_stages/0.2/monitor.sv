@@ -16,7 +16,8 @@ class my_monitor extends uvm_monitor;
   bit disable_monitor = 0;
   my_packet pkt;
   uvm_analysis_port#(my_packet) ap;
-
+  bit [3:0] last_count = 0;
+   
   function new(string name, uvm_component parent);
     super.new(name, parent);
     ap = new("ap", this); 
@@ -35,14 +36,20 @@ class my_monitor extends uvm_monitor;
          return;
       end
       
-      forever begin
-         if (!vif.rst) begin
+     forever begin
+      @(posedge vif.clk); 
+	if (!vif.rst) begin
+          if (vif.count != last_count) begin 
             pkt = my_packet::type_id::create("pkt");
-            @(vif.count)
-             `uvm_info("TRACK_COUNT", $sformatf("$$$ The current count value is: %d", vif.count), UVM_LOW)
             pkt.packet = vif.count;
+	    `uvm_info("TRACK_COUNT", $sformatf("$$ The current count value is: %d", vif.count), UVM_LOW)
+            pkt.packet = vif.count;	     
             ap.write(pkt);
-         end   
+            last_count = vif.count; // Update historical value
+          end
+       end else begin
+         last_count = 0; // Reset tracking history
       end
+   end
    endtask
 endclass
