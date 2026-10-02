@@ -1,0 +1,114 @@
+Start time: 05:40:00 on Oct 02,2026
+qverilog -sv top_tb.sv counter_assertions.sv -R -gui -voptargs="+acc" -assertdebug -do "add log -r /*; run -all" 
+-- Compiling interface m_if
+** Note: (qverilog-2286) driver.sv(1): Using implicit +incdir+/home/ajay/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package top_tb_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module counter
+-- Compiling module top_tb
+-- Compiling package counter_assertions_sv_unit
+-- Compiling module counter_assertions
+
+Top level modules:
+	top_tb
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -lib work -gui -voptargs="+acc" -assertdebug -do "add log -r /*; run -all" work.top_tb_sv_unit work.top_tb work.counter_assertions_sv_unit -appendlog -l qverilog.log -vopt 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: top_tb.sv(17): (vopt-2685) [TFMPC] - Too few port connections for 'counter_inst'.  Expected 3, found 2.
+# ** Warning: top_tb.sv(17): (vopt-2718) [TFMPC] - Missing connection for port 'count'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top_tb_sv_unit(fast)
+# Loading work.top_tb(fast)
+# Loading work.m_if(fast__2)
+# Loading work.counter(fast)
+# Loading work.counter_assertions_sv_unit(fast)
+# Loading work.counter_assertions(fast)
+# Loading work.m_if(fast)
+# Loading /home/ajay/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# add log -r /*
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO top_tb.sv(26) @ 0: reporter [TOP_TB] Starting the testbench
+# UVM_INFO @ 0: reporter [RNTST] Running test my_driver...
+# UVM_ERROR counter_assertions.sv(27) @ 5: reporter [ASSERT_FAIL] Clock frequency deviation detected! Period is not 10ns.
+# Time: 15 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# UVM_ERROR counter_assertions.sv(54) @ 15: reporter [ASSERT_FAIL] Counter skipped a beat!
+# Time: 15 | Assertion Info: Counter is working correctly. Current Value = 1 (Hex: 1, Binary: 0001)
+# UVM_ERROR counter_assertions.sv(27) @ 15: reporter [ASSERT_FAIL] Clock frequency deviation detected! Period is not 10ns.
+# Time: 25 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 25 | Assertion Info: Counter is working correctly. Current Value = 2 (Hex: 2, Binary: 0010)
+# Time: 35 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 35 | Assertion Info: Counter is working correctly. Current Value = 3 (Hex: 3, Binary: 0011)
+# Time: 45 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 45 | Assertion Info: Counter is working correctly. Current Value = 4 (Hex: 4, Binary: 0100)
+# Time: 55 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 55 | Assertion Info: Counter is working correctly. Current Value = 5 (Hex: 5, Binary: 0101)
+# Time: 65 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 65 | Assertion Info: Counter is working correctly. Current Value = 6 (Hex: 6, Binary: 0110)
+# Time: 75 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 75 | Assertion Info: Counter is working correctly. Current Value = 7 (Hex: 7, Binary: 0111)
+# Time: 85 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 85 | Assertion Info: Counter is working correctly. Current Value = 8 (Hex: 8, Binary: 1000)
+# Time: 95 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 95 | Assertion Info: Counter is working correctly. Current Value = 9 (Hex: 9, Binary: 1001)
+# Time: 105 | Measured Clock Frequency: 100.000000 MHz (Period: 10.000000 ns)
+# Time: 105 | Assertion Info: Counter is working correctly. Current Value = 10 (Hex: a, Binary: 1010)
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 110: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    3
+# UVM_FATAL :    0
+# ** Report counts by id
+# [ASSERT_FAIL]     3
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TOP_TB]     1
+# ** Note: $finish    : /home/ajay/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 110 ns  Iteration: 54  Instance: /top_tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/ajay/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 05:40:24 on Oct 02,2026, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 2
