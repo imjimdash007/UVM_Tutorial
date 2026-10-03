@@ -1,0 +1,62 @@
+graph TB
+    %% Styling Definitions
+    classDef uvmComp fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b;
+    classDef interface fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#1b5e20;
+    classDef hwModule fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100;
+    classDef tlmPort fill:#ffffff,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef tlmExport fill:#ffffff,stroke:#c2185b,stroke-width:2px,color:#880e4f;
+
+    %% Subgraph Layering for Organization
+    subgraph UVM_Scoreboard [UVM Scoreboard Component]
+        SB_Exp_FIFO[Analysis FIFO]
+        SB_Act_FIFO[Analysis FIFO]
+        SB_Comp{Compare Logic}
+        
+        SB_Exp_FIFO --> SB_Comp
+        SB_Act_FIFO --> SB_Comp
+    end
+
+    subgraph UVM_Environment [UVM Testbench Env Layer]
+        DRV(UVM Driver)
+        REF(Reference Model)
+        MON(UVM Monitor)
+        
+        %% TLM Ports
+        REF_AP("○ ap<br>Analysis Port"):::tlmPort
+        MON_AP("○ ap<br>Analysis Port"):::tlmPort
+        
+        %% TLM Exports
+        SB_EXP_EXP("□ exp_export"):::tlmExport
+        SB_ACT_EXP("□ act_export"):::tlmExport
+        
+        REF --> REF_AP
+        MON --> MON_AP
+    end
+
+    subgraph Interface_Layer [Hardware-Software Boundary]
+        VIF(Virtual Interface Layer <br> m_if)
+    end
+
+    subgraph Hardware_Layer [DUT Area]
+        DUT(DUT Counter <br> counter.v)
+    end
+
+    %% Apply Component Classes
+    class DRV,REF,MON uvmComp;
+    class VIF interface;
+    class DUT hwModule;
+    class UVM_Scoreboard fill:#f3e5f5,stroke:#4a148c,stroke-width:1.5px;
+
+    %% Connections mapping your physical sketch layout
+    DRV -- "Drives RESET" --> VIF
+    VIF -- "Monitors RESET" --> REF
+    VIF -- "Propagates RESET" --> DUT
+    DUT -- "Drives COUNT [3:0]" --> VIF
+    VIF -- "Monitors RESET & COUNT" --> MON
+
+    REF_AP == ".connect()" ==> SB_EXP_EXP ==> SB_Exp_FIFO
+    MON_AP == ".connect()" ==> SB_ACT_EXP ==> SB_Act_FIFO
+
+    %% Native Link Styling
+    linkStyle 7,8,9,10 stroke:#c2185b,stroke-width:2px;
+
