@@ -9,7 +9,7 @@ Packed based Monitor? not sure will be needed but to keep the compiler Happy ;) 
 ## Stage 0.3
 Added reference model to mimic counter 
 ## Stage 0.4
-Added SB need to connect and compile clean with env (TBD)
+Added SB need to connect and compile clean with ENV
 
 
 

@@ -7,7 +7,6 @@ class my_monitor extends uvm_monitor;
   virtual m_if vif;
   bit disable_monitor = 0;
   uvm_analysis_port#(bit [3:0]) ap;
-  bit [3:0] last_count = 0;
    
   function new(string name, uvm_component parent);
     super.new(name, parent);
@@ -19,24 +18,19 @@ class my_monitor extends uvm_monitor;
         `uvm_error("CONFIG_ERROR", "Failed to get configuration parameter vif")
       end
       if(!uvm_config_db#(bit)::get(this, "", "disable_monitor", disable_monitor)) begin
-        `uvm_error("CONFIG_ERROR", "Failed to get configuration parameter disable monitor")
+        `uvm_info("CONFIG_INFO", "Disable monitor parameter not found, defaulting to enabled", UVM_HIGH)
       end
       
       if(disable_monitor) begin
          `uvm_info("MONITOR", ">>>> disabling the monitor <<<<", UVM_LOW)
          return;
       end
-     forever begin
-      @(posedge vif.clk); 
-	if (!vif.rst) begin
-          if (vif.count != last_count) begin 
-	    `uvm_info("TRACK_COUNT", $sformatf("$$ The current count value is: %d", vif.count), UVM_LOW)
-            ap.write(vif.count);
-            last_count = vif.count; 
-          end
-       end else begin
-         last_count = 0; 
+      
+      forever begin
+         @(posedge vif.clk); 
+         `uvm_info("MONITOR", $sformatf("Sampling DUT Count = %0d (Reset=%b)", vif.count, vif.rst), UVM_HIGH)
+         ap.write(vif.count);
       end
-   end
    endtask
 endclass
+
