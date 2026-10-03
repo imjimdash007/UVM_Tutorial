@@ -1,0 +1,91 @@
+graph TB
+    %% Styling Definitions
+    classDef uvmActive fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b;
+    classDef uvmPassive fill:#ede7f6,stroke:#5e35b1,stroke-width:2px,color:#311b92;
+    classDef interface fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#1b5e20;
+    classDef hwModule fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100;
+    classDef tlmPort fill:#ffffff,stroke:#7b1fa2,stroke-width:2px,color:#4a148c;
+    classDef tlmExport fill:#ffffff,stroke:#c2185b,stroke-width:2px,color:#880e4f;
+
+    %% Scoreboard Component
+    subgraph UVM_Scoreboard [UVM Scoreboard Component]
+        SB_EXP_EXP("□ exp_export"):::tlmExport
+        SB_ACT_EXP("□ act_export"):::tlmExport
+        SB_Exp_FIFO[uvm_tlm_analysis_fifo <br> Expected]
+        SB_Act_FIFO[uvm_tlm_analysis_fifo <br> Actual]
+        SB_Comp{Compare Logic}
+        
+        SB_EXP_EXP --> SB_Exp_FIFO --> SB_Comp
+        SB_ACT_EXP --> SB_Act_FIFO --> SB_Comp
+    end
+
+    %% Reference Model Component
+    subgraph UVM_Ref_Model [Reference Model Component]
+        REF_EXP("□ Analysis Export"):::tlmExport
+        REF_CORE[Reference Logic]
+        REF_AP("○ Analysis Port"):::tlmPort
+        
+        REF_EXP --> REF_CORE --> REF_AP
+    end
+
+    %% Agent 1 (Active)
+    subgraph UVM_Agent_1 [UVM Agent 1 - Stimulus & Input Monitor]
+        A1_SEQ(Sequencer)
+        A1_DRV(Driver)
+        A1_MON(Monitor)
+        A1_AP("○ ap <br> Analysis Port"):::tlmPort
+        
+        A1_SEQ -- "seq_item_export" --> A1_DRV
+        A1_MON --> A1_AP
+    end
+
+    %% Agent 2 (Passive)
+    subgraph UVM_Agent_2 [UVM Agent 2 - Output Monitor Only]
+        A2_SEQ_OFF(Sequencer <br> OFF):::uvmPassive
+        A2_DRV_OFF(Driver <br> OFF):::uvmPassive
+        A2_MON(Monitor <br> ON)
+        A2_AP("○ ap <br> Analysis Port"):::tlmPort
+        
+        A2_MON --> A2_AP
+    end
+
+    %% Virtual Interface Layer
+    subgraph Interface_Layer [Hardware-Software Boundary]
+        VIF(Virtual Interface Layer <br> VIF)
+    end
+
+    %% DUT Area
+    subgraph Hardware_Layer [DUT Area]
+        DUT(Counter DUT <br> clk, rst, load, count_in, count_out)
+    end
+
+    %% Apply Component Classes
+    class A1_SEQ,A1_DRV,A1_MON,REF_CORE uvmActive;
+    class A2_MON uvmPassive;
+    class VIF interface;
+    class DUT hwModule;
+    class UVM_Scoreboard fill:#f3e5f5,stroke:#4a148c,stroke-width:1.5px;
+    class UVM_Ref_Model fill:#f1f8e9,stroke:#558b2f,stroke-width:1.5px;
+
+    %% ----------------------------------------------------
+    %% Connections mapping your layout
+    %% ----------------------------------------------------
+    
+    %% 1. Agent 1 Driver and Monitor Pin Paths
+    A1_DRV -- "Drives: load, reset, count_in" --> VIF
+    VIF -- "Samples: load, reset, count_in" --> A1_MON
+    
+    %% 2. VIF to DUT Hardware Signal Routing
+    VIF -- "clk, rst, load, count_in" --> DUT
+    DUT -- "count_out [3:0]" --> VIF
+
+    %% 3. Agent 2 Monitor sampling outputs
+    VIF -- "Samples: count_out" --> A2_MON
+
+    %% 4. TLM Software Connections
+    A1_AP == ".connect()" ==> REF_EXP
+    REF_AP == ".connect()" ==> SB_EXP_EXP
+    A2_AP == ".connect()" ==> SB_ACT_EXP
+
+    %% Visual Link Customizations for TLM Pathing
+    linkStyle 9,10,11 stroke:#c2185b,stroke-width:2px;
