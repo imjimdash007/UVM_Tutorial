@@ -1,17 +1,15 @@
 `include "uvm_macros.svh"
 import uvm_pkg::*;
-
 `include "m_if.sv"
 `include "counter.v"
-`include "driver.sv"
+`include "env.sv"
 
 module top_tb;
    bit clk; 
 
    // 1. Instantiate both interfaces and pass the clock
    m_if in_vif(clk);  
-   m_if out_vif(clk); 
-
+   m_if out_vif(clk);
    // Clock generator (100MHz / 10ns period)
    initial begin
       clk = 0;
@@ -33,7 +31,7 @@ module top_tb;
       uvm_config_db#(virtual m_if)::set(null, "*", "out_vif", out_vif);
       uvm_pkg::uvm_top.enable_print_topology = 1;
       // Start the UVM Test
-      run_test("my_driver");
+      run_test("my_env");
    end
 
 endmodule 

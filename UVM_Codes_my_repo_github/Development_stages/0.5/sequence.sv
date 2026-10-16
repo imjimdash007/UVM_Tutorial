@@ -10,7 +10,7 @@ class reset_seq extends uvm_sequence #(my_packet);
     `uvm_info("SEQ", "Starting Reset Sequence...", UVM_LOW)
     // Generate a packet with reset asserted
     `uvm_do_with(req, { rst == 1'b1; load == 1'b0; })
-  Task
+  endtask
 endclass
 
 class data_10_packets_seq extends uvm_sequence #(my_packet);
@@ -24,19 +24,29 @@ class data_10_packets_seq extends uvm_sequence #(my_packet);
       // Generate packet with random data, reset de-asserted
       `uvm_do_with(req, { rst == 1'b0; })
     end
-  task
+  endtask
 endclass
 
-class my_sequence_library extends uvm_sequence_library #(my_packet);
-  `uvm_object_utils(my_sequence_library)
-  // Define the macro to initialize the library
-  `uvm_sequence_library_utils(my_sequence_library)
-  function new(string name = "my_sequence_library");
+class master_sequence extends uvm_sequence #(my_packet);
+  `uvm_object_utils(master_sequence)
+
+  reset_seq           r_seq;
+  data_10_packets_seq d_seq;
+
+  function new(string name = "master_sequence");
     super.new(name);
-    // Add your sequences to this specific library
-    add_typewide_sequence(reset_seq::get_type());
-    add_typewide_sequence(data_10_packets_seq::get_type());
-    // Configure selection mode (e.g., UVM_SEQ_LIB_RAND, UVM_SEQ_LIB_USER, UVM_SEQ_LIB_ITEM)
-    init_sequence_library();
   endfunction
+
+  virtual task body();
+    r_seq = reset_seq::type_id::create("r_seq");
+    d_seq = data_10_packets_seq::type_id::create("d_seq");
+
+    // 1. Run Reset sequence exactly once
+    `uvm_info("MASTER_SEQ", "Executing Reset Sequence...", UVM_LOW)
+    r_seq.start(m_sequencer); 
+
+    // 2. Run Data sequence to generate your 10 packets with rst de-asserted
+    `uvm_info("MASTER_SEQ", "Executing Data Sequence...", UVM_LOW)
+    d_seq.start(m_sequencer);
+  endtask
 endclass
