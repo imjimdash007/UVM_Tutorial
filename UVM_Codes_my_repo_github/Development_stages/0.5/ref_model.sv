@@ -4,9 +4,9 @@ import uvm_pkg::*;
 
 class ref_mod extends uvm_component;
   `uvm_component_utils(ref_mod)
-   uvm_analysis_import#(packet,ref_mod)  imp_port;
-   uvm_analysis_port#(bit [3:0]) ap_port;
-   my_packet pack
+   uvm_analysis_imp   #(my_packet,ref_mod)  imp_port;
+   uvm_analysis_port #(bit [3:0]) ap_port;
+
    protected bit [3:0] internal_count;
    
   function new(string name, uvm_component parent);
@@ -14,10 +14,18 @@ class ref_mod extends uvm_component;
     ap_port = new("ap_port", this);
      imp_port = new("imp_port",this);
   endfunction 
-   virtual task run_phase(uvm_phase);
-      forever begin
-       	  pack=
-      end	 
-   endtask 
    
-      
+   function void write( my_packet pack);
+      if(pack.rst) begin
+	 internal_count = 4'h0;
+      end else if(pack.load) begin
+	 internal_count = pack.count_in;
+      end else begin
+	 internal_count = internal_count + 1;
+      end
+      ap_port.write(internal_count);
+      `uvm_info("REF_MODEL",$sformatf("reset=%d,load=%d,count_in=%h,internal_count=%h",pack.rst,pack.load,pack.count_in,internal_count),UVM_LOW)
+   endfunction   
+endclass
+   
+  
