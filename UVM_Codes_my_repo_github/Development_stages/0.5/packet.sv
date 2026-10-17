@@ -8,7 +8,8 @@ class my_packet extends uvm_sequence_item;
    rand bit rst;
    rand bit load;
    rand bit [3:0] count_in;
-   
+   bit [3:0]	  count_out;
+      
    `uvm_object_utils_begin(my_packet)
       `uvm_field_int(rst,      UVM_DEFAULT)
       `uvm_field_int(load,     UVM_DEFAULT)

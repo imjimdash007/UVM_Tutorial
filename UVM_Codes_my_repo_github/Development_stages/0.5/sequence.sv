@@ -22,7 +22,7 @@ class data_10_packets_seq extends uvm_sequence #(my_packet);
     `uvm_info("SEQ", "Starting Data Sequence (10 Packets)...", UVM_LOW)
     for(int i = 0; i < 10; i++) begin
       // Generate packet with random data, reset de-asserted
-      `uvm_do_with(req, { rst == 1'b0; })
+      `uvm_do_with(req, { rst == 1'b0; load dist { 1'b1 := 2, 1'b0 := 8 };})
     end
   endtask
 endclass
