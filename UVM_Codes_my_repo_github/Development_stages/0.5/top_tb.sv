@@ -25,12 +25,13 @@ module top_tb;
       .count_out(out_vif.count_out) // Output monitored by output interface
    );
 
+   
+
    // 4. UVM Configuration Database Registration
    initial begin
       uvm_config_db#(virtual m_if)::set(null, "*", "in_vif", in_vif);
       uvm_config_db#(virtual m_if)::set(null, "*", "out_vif", out_vif);
       uvm_pkg::uvm_top.enable_print_topology = 1;
-      // Start the UVM Test
       run_test("my_env");
    end
 
