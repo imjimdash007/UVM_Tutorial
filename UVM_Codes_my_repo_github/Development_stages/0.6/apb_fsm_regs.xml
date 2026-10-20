@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:spirit="http://spiritconsortium.org"
+                  xmlns:xsi="http://w3.org"
+                  xsi:schemaLocation="http://spiritconsortium.org http://spiritconsortium.org/index.xsd">
+    <spirit:vendor>user.hardware</spirit:vendor>
+    <spirit:library>ip</spirit:library>
+    <spirit:name>apb_fsm_regs</spirit:name>
+    <spirit:version>1.0</spirit:version>
+    
+    <spirit:memoryMaps>
+        <spirit:memoryMap>
+            <spirit:name>apb_map</spirit:name>
+            <spirit:addressBlock>
+                <spirit:name>regs</spirit:name>
+                <spirit:baseAddress>0</spirit:baseAddress>
+                <spirit:range>32</spirit:range>
+                <spirit:width>32</spirit:width>
+                
+                <!-- Register 0 -->
+                <spirit:register>
+                    <spirit:name>reg0</spirit:name>
+                    <spirit:addressOffset>0x00</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:field>
+                        <spirit:name>ctrl</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>4</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                    </spirit:field>
+                </spirit:register>
+                
+                <!-- Register 1 -->
+                <spirit:register>
+                    <spirit:name>reg1</spirit:name>
+                    <spirit:addressOffset>0x04</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:field>
+                        <spirit:name>ctrl</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>4</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                    </spirit:field>
+                </spirit:register>
+                
+                <!-- Register 2 -->
+                <spirit:register>
+                    <spirit:name>reg2</spirit:name>
+                    <spirit:addressOffset>0x08</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:field>
+                        <spirit:name>ctrl</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>4</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                    </spirit:field>
+                </spirit:register>
+                
+                <!-- Register 3 -->
+                <spirit:register>
+                    <spirit:name>reg3</spirit:name>
+                    <spirit:addressOffset>0x0C</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:field>
+                        <spirit:name>ctrl</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>4</spirit:bitWidth>
+                        <spirit:access>read-write</spirit:access>
+                    </spirit:field>
+                </spirit:register>
+                
+                <!-- Status Register -->
+                <spirit:register>
+                    <spirit:name>status_reg</spirit:name>
+                    <spirit:addressOffset>0x10</spirit:addressOffset>
+                    <spirit:size>32</spirit:size>
+                    <spirit:access>read-only</spirit:access>
+                    <spirit:field>
+                        <spirit:name>state</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>4</spirit:bitWidth>
+                        <spirit:access>read-only</spirit:access>
+                    </spirit:field>
+                </spirit:register>
+                
+            </spirit:addressBlock>
+        </spirit:memoryMap>
+    </spirit:memoryMaps>
+</spirit:component>
