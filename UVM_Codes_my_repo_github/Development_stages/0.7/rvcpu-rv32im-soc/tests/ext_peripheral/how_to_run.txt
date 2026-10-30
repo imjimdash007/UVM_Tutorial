@@ -1,0 +1,48 @@
+HOW TO BUILD AND RUN THE EXT PERIPHERAL TEST
+=============================================
+
+IMPORTANT: the simulator loads ./instr_mem.bin (see src/Instr_mem.sv). Editing
+main.c in this folder does NOT change the simulation until you rebuild the
+binary with the gcc-toolchain and copy it back here. The toolchain compiles
+ITS OWN main.c (gcc-toolchain/main.c), not the one in this folder.
+
+Prerequisites: riscv64-unknown-elf-gcc, python3, verilator.
+
+Steps (paths relative to rvcpu-rv32im-soc/)
+-------------------------------------------
+
+1. Edit the C program in this folder:
+       tests/ext_peripheral/main.c
+   (e.g. change *ext_opA / *ext_opB values)
+
+2. Copy it into the toolchain folder (overwrites gcc-toolchain/main.c):
+       cp tests/ext_peripheral/main.c gcc-toolchain/main.c
+
+3. Build the program and generate instr_mem.bin:
+       cd gcc-toolchain
+       make all
+
+4. Copy the new binary into the test folder:
+       cp instr_mem.bin ../tests/ext_peripheral/
+
+5. Build the Verilator model and run the simulation:
+       cd ../tests/ext_peripheral
+       make run
+
+   (make all only builds the simulator; make run builds and runs it.)
+
+Expected output for opA=126, opB=74:
+       Resetting the system...
+       T: 257 GPIO Out: 11001000 (200)
+
+Optional
+--------
+- View waveforms (waveform.vcd is written by the run):  make waves
+- Clean build products:                                  make clean
+- Check the generated code: gcc-toolchain/disassembly.txt
+
+Troubleshooting
+---------------
+- Output does not match your edit: instr_mem.bin is stale. Repeat steps 2-4.
+- make says nothing to do after changing only instr_mem.bin: that is fine,
+  the file is read at run time, just run ./obj_dir/EXT_WRAPPER (or make run).
